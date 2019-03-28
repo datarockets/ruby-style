@@ -1,0 +1,54 @@
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "bin/*"
+    - "lib/tasks/**/*"
+    - "config/**/*"
+    - "vendor/**/*"
+    - "app/views/**/*"
+    - "config.ru"
+    - "Rakefile"
+
+require: rubocop-rspec
+inherit_gem:
+  rubocop-rails_config:
+    - config/rails.yml
+
+Bundler/DuplicatedGem:
+  Enabled: true
+
+Bundler/OrderedGems:
+  TreatCommentsAsGroupSeparators: true
+
+Layout/AlignHash:
+  EnforcedLastArgumentHashStyle: always_ignore
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: 2
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/IndentationConsistency:
+  EnforcedStyle: normal
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 18
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
