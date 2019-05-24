@@ -9,11 +9,6 @@ AllCops:
     - "config.ru"
     - "Rakefile"
 
-require: rubocop-rspec
-inherit_gem:
-  rubocop-rails_config:
-    - config/rails.yml
-
 Bundler/DuplicatedGem:
   Enabled: true
 
