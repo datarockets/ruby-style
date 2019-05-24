@@ -9,6 +9,8 @@ AllCops:
     - "config.ru"
     - "Rakefile"
 
+require: rubocop-rspec
+
 Bundler/DuplicatedGem:
   Enabled: true
 
