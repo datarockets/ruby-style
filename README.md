@@ -1,6 +1,6 @@
 # Datarockets::Style
 
-Datarockets shared style configs and notes of style code convensions. This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](todo).
+Datarockets shared style configs and notes of code-style convensions. This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](todo).
 
 ## Installation
 
@@ -38,7 +38,7 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependencies. Percy-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+You do not need to include rubocop directly in your application's dependencies. Datarockets-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
 
 ## Changelog
 
@@ -46,7 +46,7 @@ Datarockets Style's changelog is available [here](CHANGELOG.md).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/roman-dubrovsky/datarockets-style. If you'd like to contribute to RuboCop, please take the time to go through our short [contribution guidelines](todo).
+Bug reports and pull requests are welcome on GitHub at https://github.com/datarockets/datarockets-style. If you'd like to contribute to our RuboCop config and code-style rules, please take the time to go through our short [contribution guidelines](CONTRIBUTING.md).
 
 
 ## License
