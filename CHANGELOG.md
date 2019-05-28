@@ -1,7 +1,23 @@
 # Change Log
 
+The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-format)
+
 ## master (unreleased)
 
-Added default basic config. It includes a ruby, rails and rspec rubocop configs with that specific rules:
+### Added
 
-* todo: change me
+* todo
+
+### Changed
+
+* todo
+
+### Bug fixes
+
+* todo
+
+### Removed
+
+* todo
+
+## 0.1.0 (date here e.g 2019-05-25)
