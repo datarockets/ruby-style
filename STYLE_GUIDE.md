@@ -37,8 +37,8 @@ This is a small list of differences which we have when compared with community s
 }
 ```
 
-* There is one exception in the rule above when the hash literal is passed as method arguments.
-In this case we're just using an indentation level.
+* There is one exception in the rule above when the hash literal is passed as method argument.
+In this case we just use an indentation level.
 
 ```ruby
 # bad
@@ -83,13 +83,17 @@ def foo(
 end
 ```
 
-* The `end` shall be aligned with the left-hand-side of the variable assignment.
+* The `end` shall be aligned with the left-hand-side of the variable assignment. But we prefer not to use code blocks with `end` for variable assignment and prefer move it into the separate methods.
 
 ```ruby
 # bad
 
 variable = if true
            end
+
+variable = array.map do |value|
+                    value
+                  end
 
 # good
 
@@ -99,6 +103,27 @@ end
 variable =
   if true
   end
+
+variable = array.map do |value|
+  value
+end
+
+# better
+
+variable = condition_value
+
+def condition_value(*args)
+  if true
+  end
+end
+
+variable = values_from_array(array)
+
+def values_from_array(array)
+  array.map do |value|
+    value
+  end
+end
 
 ```
 
@@ -169,8 +194,6 @@ Array.new(3) {|i| i + 1}
 h = {a: 1, b: 2}
 Array.new(3) { |i| i + 1 }
 ```
-
-*
 
 ## Rspec
 
