@@ -1,4 +1,4 @@
-# Datarockets::Style
+# Datarockets::Style [![Gem Version](https://badge.fury.io/rb/datarockets-style.svg)](https://badge.fury.io/rb/datarockets-style)
 
 Datarockets shared style configs and notes of code-style convensions. Based on the [Rubocop](https://github.com/rubocop-hq/rubocop) util.
 
