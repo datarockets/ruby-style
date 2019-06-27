@@ -1,6 +1,8 @@
 # Datarockets::Style
 
-Datarockets shared style configs and notes of code-style convensions. This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](STYLE_GUIDE.md).
+Datarockets shared style configs and notes of code-style convensions. Based on the [Rubocop](https://github.com/rubocop-hq/rubocop) util.
+
+This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](STYLE_GUIDE.md).
 
 ## Installation
 
@@ -20,7 +22,7 @@ spec.add_development_dependency 'datarockets-style'
 
 And then execute:
 
-    $ bundle install
+$ bundle install
 
 ## Usage
 
