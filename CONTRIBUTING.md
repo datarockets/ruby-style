@@ -27,7 +27,7 @@ do so.
 * If your change has a corresponding open GitHub issue, prefix the commit message with `[Fix #github-issue-number]`.
 * Make sure to add tests for it. This is important so we don't break it
   in a future version unintentionally.
-* If you add new code-style rule or cop, add some words about it in the [Code Style Notes](CHANGEME.md).
+* If you add new code-style rule or cop, add some words about it in the [Code Style Notes](STYLE_GUIDE.md).
 * Add an entry to the [Changelog](CHANGELOG.md) accordingly. See [changelog entry format](#changelog-entry-format).
 * If you deliver new cop, try to suggest and deliver it to the community [rubocop][7] gem.
 * [Squash related commits together][5].
@@ -43,6 +43,7 @@ Here are a few examples:
 * New cop `ElseLayout` checks for odd arrangement of code in the `else` branch of a conditional expression. ([@bbatsov][])
 ```
 
+* There are four categories for each release: added, changed, bug fixed and removed
 * Mark it up in [Markdown syntax][6].
 * The entry line should start with `* ` (an asterisk and a space).
 * If the change has a related GitHub issue (e.g. a bug fix for a reported issue), put a link to the issue as `[#123](https://github.com/rubocop-hq/rubocop/issues/123): `.
