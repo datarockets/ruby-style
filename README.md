@@ -1,6 +1,6 @@
 # Datarockets::Style
 
-Datarockets shared style configs and notes of code-style convensions. This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](todo).
+Datarockets shared style configs and notes of code-style convensions. This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](STYLE_GUIDE.md).
 
 ## Installation
 
