@@ -4,19 +4,35 @@ In datarockets we enforce a community [Ruby Style Guide](https://github.com/rubo
 
 This is a small list of differences which we have when compared with community style guide:
 
+## Table of contents
+
+* [Bundler](#Bundler)
+* [Style](#Style)
+* [Rspec](#Rspec)
+
 ## Bundler
 
-* A Gem's requirements should be listed only once in a Gemfile
+* <a name="bundler-add-once"></a>
+  A Gem's requirements should be listed only once in a Gemfile
+  <sup>[[link](#bundler-add-once)]</sup>
 
-* Gems should be alphabetically sorted within groups. Also you can use a line comment as a group separator.
+* <a name="bundler-ordering"></a>
+  Gems should be alphabetically sorted within groups. Also you can use a line comment as a group separator.
+  <sup>[[link](#bundler-ordering)]</sup>
 
 ## Style
 
-* Limit lines to 80 characters.
+* <a name="style-line-length"></a>
+  Limit lines to 120 characters.
+  <sup>[[link](#style-line-length)]</sup>
 
-* Prefer double-quotes unless your string literal contains " or escape characters you want to suppress.
+* <a name="style-double-quotes"></a>
+  Prefer double-quotes unless your string literal contains " or escape characters you want to suppress.
+  <sup>[[link](#style-double-quotes)]</sup>
 
-* If elements of a hash literal span more than one line we're aligning them by keys
+* <a name="style-hash-aligning"></a>
+  If elements of a hash literal span more than one line we're aligning them by keys.
+  <sup>[[link](#style-hash-aligning)]</sup>
 
 
 ```ruby
@@ -37,8 +53,10 @@ This is a small list of differences which we have when compared with community s
 }
 ```
 
-* There is one exception in the rule above when the hash literal is passed as method argument.
-In this case we just use an indentation level.
+* <a name="style-keyword-arguments-aligning"></a>
+  There is one exception in the rule above when the hash literal is passed as method argument.
+  In this case we just use an indentation level.
+  <sup>[[link](#style-keyword-arguments-aligning)]</sup>
 
 ```ruby
 # bad
@@ -50,7 +68,9 @@ do_something(foo: 1,
   bar: 2)
 ```
 
-* The parameters on a multi-line method call or definition are aligning by an indentation level.
+* <a name="style-parameters-aligning"></a>
+  The parameters on a multi-line method call or definition are aligning by an indentation level.
+  <sup>[[link](#style-parameters-aligning)]</sup>
 
 ```ruby
 # good
@@ -83,7 +103,9 @@ def foo(
 end
 ```
 
-* The `end` shall be aligned with the left-hand-side of the variable assignment. But we prefer not to use code blocks with `end` for variable assignment and prefer move it into the separate methods.
+* <a name="style-end-aligning"></a>
+  The `end` shall be aligned with the left-hand-side of the variable assignment. But we prefer not to use code blocks with `end` for variable assignment and prefer move it into the separate methods.
+  <sup>[[link](#style-end-aligning)]</sup>
 
 ```ruby
 # bad
@@ -127,7 +149,9 @@ end
 
 ```
 
-* We're prefering a ruby style for methods indentations, not rails. You can check it [here](https://github.com/rubocop-hq/ruby-style-guide#indent-public-private-protected)
+* <a name="style-method-indentations"></a>
+  We're prefering a ruby style for methods indentations, not rails. You can check it [here](https://github.com/rubocop-hq/ruby-style-guide#indent-public-private-protected).
+  <sup>[[link](#style-method-indentations)]</sup>
 
 ```ruby
 # bad
@@ -183,7 +207,9 @@ class A
 end
 ```
 
-* For hash literals not to add scapes after `{` or before `}`. We want to have the advantage of adding visual difference between block and hash literals.
+* <a name="style-hash-spaces"></a>
+  For hash literals not to add scapes after `{` or before `}`. We want to have the advantage of adding visual difference between block and hash literals.
+  <sup>[[link](#style-hash-spaces)]</sup>
 
 ```ruby
 # bad
@@ -197,6 +223,10 @@ Array.new(3) { |i| i + 1 }
 
 ## Rspec
 
-* We're happy to use [better spec rules](http://www.betterspecs.org/) for improving our tests.
+* <a name="rspec-betterrspec"></a>
+  We're happy to use [better spec rules](http://www.betterspecs.org/) for improving our tests.
+  <sup>[[link](#rspec-betterrspec)]</sup>
 
-* We're not limiting a length of rspec files
+* <a name="rspec-file-length"></a>
+  We're not limiting a length of rspec files.
+  <sup>[[link](#rspec-file-length)]</sup>
