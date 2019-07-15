@@ -19,7 +19,7 @@ do so.
 ## Pull requests
 
 * Read [how to properly contribute to open source projects on GitHub][2].
-* Fork the project.
+* Fork the project (if it's necessary and you don't have writing access).
 * Use a topic/feature branch to easily amend a pull request later, if necessary.
 * Write [good commit messages][3].
 * Use the same coding conventions as the rest of the project.
