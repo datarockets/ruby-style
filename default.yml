@@ -44,5 +44,8 @@ Metrics/LineLength:
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 
+RSpec/ImplicitSubject:
+  Enabled: false
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
