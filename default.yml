@@ -43,3 +43,6 @@ Metrics/LineLength:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+Naming/RescuedExceptionsVariableName:
+  PreferredName: error
