@@ -30,4 +30,4 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 [@r.dubrovsky]: https://github.com/roman-dubrovsky
 [@aleks]: https://github.com/AleksSenkou
-[@ula] https://github.com/lazycoder9
+[@ula]: https://github.com/lazycoder9
