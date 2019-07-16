@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+* Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`) ([@ula][])
+
 ## 0.1.0 (2019-06-27)
 
 ### Added
@@ -29,3 +31,4 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 [@r.dubrovsky]: https://github.com/roman-dubrovsky
 [@aleks]: https://github.com/AleksSenkou
+[@ula]: https://github.com/lazycoder9
