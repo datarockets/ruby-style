@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+* Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`) ([@ula][])
+
 ## 0.1.0 (2019-06-27)
 
 ### Added
@@ -26,7 +28,6 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Change style to `variable` for `Layout/EndAlignment` cop ([@r.dubrovsky][])
 * Change style to `with_fixed_indentation` with indentation width 2 for `Layout/AlignParameter` cop ([@r.dubrovsky][])
 * Always ingone hash aligning for key word arguments (cop: `Layout/AlignHash`) ([@r.dubrovsky][])
-* Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`) ([@ula][])
 
 [@r.dubrovsky]: https://github.com/roman-dubrovsky
 [@aleks]: https://github.com/AleksSenkou

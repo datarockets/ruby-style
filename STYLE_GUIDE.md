@@ -222,7 +222,7 @@ Array.new(3) { |i| i + 1 }
 ```
 
 * <a name="style-rescued-variable-name"></a>
-  We prefer to use self-explained variable names in rescued exceptions
+  Use `error` as a variable name on processing exceptions.
   <sup>[[link](#style-rescued-variable-name)]</sup>
 
 ```ruby
