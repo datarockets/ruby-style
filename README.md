@@ -22,7 +22,9 @@ spec.add_development_dependency 'datarockets-style'
 
 And then execute:
 
+```bash
 $ bundle install
+```
 
 ## Usage
 
