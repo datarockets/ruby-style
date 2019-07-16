@@ -221,6 +221,25 @@ h = {a: 1, b: 2}
 Array.new(3) { |i| i + 1 }
 ```
 
+* <a name="style-rescued-variable-name"></a>
+  We prefer to use self-explained variable names in rescued exceptions
+  <sup>[[link](#style-rescued-variable-name)]</sup>
+
+```ruby
+# bad
+begin
+  # do something
+rescue MyException => e
+  # do something
+end
+
+# good
+begin
+  # do something
+rescue MyException => error
+  # do something
+end
+```
 ## Rspec
 
 * <a name="rspec-betterrspec"></a>
