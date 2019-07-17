@@ -5,6 +5,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ## master (unreleased)
 
 ### Changed
+
+* Update rubocop to `0.73.0`. ([@r.dubrovsky][])
 * Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`) ([@ula][])
 * Disable `RSpec/ImplicitSubject` cop for rspec files. ([@r.dubrovsky][])
 
