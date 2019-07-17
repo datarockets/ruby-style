@@ -249,3 +249,31 @@ end
 * <a name="rspec-file-length"></a>
   We're not limiting a length of rspec files.
   <sup>[[link](#rspec-file-length)]</sup>
+
+* <a name="rspec-subject"></a>
+  Each subject should be named and we should not use `subject` in our test cases.
+  Prefer to use `is_expected` that `expect(subject_name)` for small tests.
+  <sup>[[link](#rspec-subject)]</sup>
+
+```ruby
+# bad
+subject { service.call }
+
+it 'test' do
+  expect(subject).to eq value
+end
+
+# ok
+subject(:service_call) { service.call }
+
+it 'test' do
+  expect(service_call).to eq value
+end
+
+# better
+subject { service.call }
+
+it 'test' do
+  is_expected.to eq value
+end
+```

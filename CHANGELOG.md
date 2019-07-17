@@ -4,7 +4,9 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
 * Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`) ([@ula][])
+* Disable `RSpec/ImplicitSubject` cop for rspec files. ([@r.dubrovsky][])
 
 ## 0.1.0 (2019-06-27)
 
