@@ -240,6 +240,26 @@ rescue MyException => error
   # do something
 end
 ```
+
+
+* <a name="style-empty-method"></a>
+  Write empty methods in an expanded way.
+  <sup>[[link](#empty-method)]</sup>
+
+```ruby
+# bad
+def foo(bar); end
+
+def self.foo(bar); end
+
+# good
+def foo(bar)
+end
+
+def self.foo(bar)
+end
+```
+
 ## Rspec
 
 * <a name="rspec-betterrspec"></a>
