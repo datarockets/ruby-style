@@ -34,6 +34,10 @@ Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
   EnforcedStyleForEmptyBraces: no_space
 
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
