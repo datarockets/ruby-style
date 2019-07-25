@@ -10,7 +10,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Fixed
 
-* Disable `Lint/AmbiguousBlockAssociation` for Rspec directory. ([@r.dubrovsky][])
+* [#4222](https://github.com/rubocop-hq/rubocop/issues/4222): Disable `Lint/AmbiguousBlockAssociation` for Rspec directory. ([@r.dubrovsky][])
 
 ## 0.2.0 (2019-07-17)
 
