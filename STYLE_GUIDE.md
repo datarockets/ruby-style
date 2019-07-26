@@ -72,25 +72,13 @@ do_something(foo: 1,
   The parameters on a multi-line method call or definition are aligning by an indentation level.
   <sup>[[link](#style-parameters-aligning)]</sup>
 
+  **Recommended:** write each parameter on the separate line.
+
 ```ruby
-# good
-
-def foo(bar,
-  baz)
-  123
-end
-
-def foo(
-  bar,
-  baz
-)
-  123
-end
-
 # bad
 
-def foo(bar,
-        baz)
+def foo(bar, baz,
+        kek, lol)
   123
 end
 
@@ -99,6 +87,24 @@ end
 def foo(
   bar,
      baz)
+  123
+end
+
+# good
+
+def foo(bar , baz,
+  kek, lol)
+  123
+end
+
+# better
+
+def foo(
+  bar,
+  baz,
+  kek,
+  lol
+)
   123
 end
 ```
