@@ -7,6 +7,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Allow writing empty methods in two lines. ([@v.kuzmik][])
+* Disable `Style/FrozenStringLiteralComment` cop by default. ([@r.dubrovsky][])
 
 ### Fixed
 

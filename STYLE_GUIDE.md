@@ -260,6 +260,12 @@ def self.foo(bar)
 end
 ```
 
+* <a name="style-magic-link"></a>
+  There are not any requried rules for `frozen_string_literal` magic url.
+  Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends  on the project.
+  So set up it on the local rubocop config manually.
+  <sup>[[link](#style-magic-link)]</sup>
+
 ## Rspec
 
 * <a name="rspec-betterrspec"></a>
