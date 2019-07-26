@@ -6,11 +6,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* Allow writing empty methods in two lines ([@v.kuzmik][])
+* Allow writing empty methods in two lines. ([@v.kuzmik][])
 
 ### Fixed
 
 * [#4222](https://github.com/rubocop-hq/rubocop/issues/4222): Disable `Lint/AmbiguousBlockAssociation` for Rspec directory. ([@r.dubrovsky][])
+* [#65](https://github.com/datarockets/datarockets-style/issues/65): Exclude `node_modules` from rubocop scope. ([@r.dubrovsky][])
 
 ## 0.2.0 (2019-07-17)
 
