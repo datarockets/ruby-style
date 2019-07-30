@@ -92,7 +92,7 @@ end
 
 # good
 
-def foo(bar , baz,
+def foo(bar, baz,
   kek, lol)
   123
 end
