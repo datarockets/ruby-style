@@ -33,7 +33,7 @@ Create a `.rubocop.yml` with the following directives:
 ```yaml
 inherit_gem:
   datarockets-style:
-    - default.yml
+    - config/default.yml
 ```
 
 Now, run:
