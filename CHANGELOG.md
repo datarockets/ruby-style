@@ -6,6 +6,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop-rspec to `1.34.1`. ([@r.dubrovsky][])
 * Move shared rubocop config into `config` directory. ([@r.dubrovsky][])
 * Allow writing empty methods in two lines. ([@v.kuzmik][])
 * Disable `Style/FrozenStringLiteralComment` cop by default. ([@r.dubrovsky][])
