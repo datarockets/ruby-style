@@ -6,6 +6,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop-rspec to `1.35.0`. ([@r.dubrovsky][])
 * Use contenxt-dependent style for curly braces around hash params. ([@v.kuzmik][])
 
 ## 0.3.0 (2019-08-02)
