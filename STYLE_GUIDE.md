@@ -250,7 +250,7 @@ end
 
 * <a name="style-empty-method"></a>
   Write empty methods in an expanded way.
-  <sup>[[link](#empty-method)]</sup>
+  <sup>[[link](#style-empty-method)]</sup>
 
 ```ruby
 # bad
