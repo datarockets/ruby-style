@@ -52,6 +52,13 @@ Naming/MemoizedInstanceVariableName:
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - for
+
 RSpec/ImplicitSubject:
   Enabled: false
 

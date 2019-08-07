@@ -345,3 +345,19 @@ it 'test' do
   is_expected.to eq value
 end
 ```
+
+* <a name="rspec-context-wording"></a>
+  When describing a context, start its description with "when", "for", with" or "without".
+  <sup>[[link](#rspec-context-wording)]</sup>
+
+```ruby
+  # bad
+context 'the display name not present' do
+  # ...
+end
+
+# good
+context 'when the display name is not present' do
+  # ...
+end
+```
