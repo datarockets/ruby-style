@@ -266,6 +266,27 @@ def self.foo(bar)
 end
 ```
 
+* <a name="style-cached-instance-variable-name"></a>
+  Use leading underscores in cached instance variable name
+  <sup>[[link](#style-cached-instance-variable-name)]</sup>
+
+```ruby
+# bad
+def foo
+  @something ||= calculate_expensive_thing
+end
+
+# bad
+def foo
+  @foo ||= calculate_expensive_thing
+end
+
+# good
+def foo
+  @_foo ||= calculate_expensive_thing
+end
+```
+
 * <a name="style-magic-link"></a>
   There are not any requried rules for `frozen_string_literal` magic url.
   Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends  on the project.

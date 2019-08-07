@@ -8,6 +8,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 * Update rubocop-rspec to `1.35.0`. ([@r.dubrovsky][])
 * Use contenxt-dependent style for curly braces around hash params. ([@v.kuzmik][])
+* Use leading underscores in cached instance variable name (cop: `Naming/MemoizedInstanceVariableName`). ([@ula][])
 
 ## 0.3.0 (2019-08-02)
 
