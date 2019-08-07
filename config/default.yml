@@ -52,6 +52,9 @@ Naming/RescuedExceptionsVariableName:
 RSpec/ImplicitSubject:
   Enabled: false
 
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
 Style/EmptyMethod:
   EnforcedStyle: expanded
 

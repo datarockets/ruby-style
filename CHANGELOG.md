@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Use contenxt-dependent style for curly braces around hash params. ([@v.kuzmik][])
+
 ## 0.3.0 (2019-08-02)
 
 ### Changed
