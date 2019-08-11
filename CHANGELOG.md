@@ -10,6 +10,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Use contenxt-dependent style for curly braces around hash params. ([@v.kuzmik][])
 * Use leading underscores in cached instance variable name (cop: `Naming/MemoizedInstanceVariableName`). ([@ula][])
 * Allow use `for` wiht `RSpec/ContextWording` cop. ([@r.dubrovsky][])
+* Enable `Layout/MultilineMethodCallIndentation` cop for aliging arguments with fixed indentation. ([@r.dubrovsky][], [@ula][])
 
 ## 0.3.0 (2019-08-02)
 

@@ -31,6 +31,9 @@ Layout/EndAlignment:
 Layout/IndentationConsistency:
   EnforcedStyle: normal
 
+Layout/MultilineMethodCallIndentation:
+    EnforcedStyle: indented
+
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
   EnforcedStyleForEmptyBraces: no_space
