@@ -109,6 +109,35 @@ def foo(
 end
 ```
 
+* <a name="style-multiline-method-call-indentation">
+  The indentation of the method name part in method calls that span more than one line are aligning by an indentation level.
+  <sup>[[link](#style-multiline-method-call-indentation)]</sup>
+
+```ruby
+# bad
+while myvariable
+      .b
+  # do something
+end
+
+# bad
+Thing.a
+     .b
+     .c
+
+# good
+while myvariable
+  .b
+
+  # do something
+end
+
+# good
+Thing.a
+  .b
+  .c
+```
+
 * <a name="style-end-aligning"></a>
   The `end` shall be aligned with the left-hand-side of the variable assignment. But we prefer not to use code blocks with `end` for variable assignment and prefer move it into the separate methods.
   <sup>[[link](#style-end-aligning)]</sup>
