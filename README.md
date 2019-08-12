@@ -44,6 +44,25 @@ $ bundle exec rubocop
 
 You do not need to include rubocop directly in your application's dependencies. Datarockets-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
 
+### Configurable cops
+
+There are some areas in which there is no clear consensus in datarockets team regarding a particular style (like string literal quoting).
+In such scenarios, all popular styles are acknowledged and it’s up to you to pick one and apply it consistently.
+For that just set up these cops before starting of usage.
+
+#### Style/StringLiterals
+
+There are two popular styles in the Ruby community, both of which are considered good - single quotes by default and double quotes by default.
+There is no clear consensus about this style in the Ruby community and in the datarockets team.
+So we suggest just to set up a [preferable style](https://rubocop.readthedocs.io/en/latest/cops_style/#stylestringliterals) before running this gem.
+
+P.S. The string literals in this gem are using double quotes by default.
+
+##### Tips
+
+For an existing project, we suggest to run rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
+
+
 ## Changelog
 
 Datarockets Style's changelog is available [here](CHANGELOG.md).

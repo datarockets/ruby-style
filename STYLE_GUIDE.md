@@ -26,9 +26,9 @@ This is a small list of differences which we have when compared with community s
   Limit lines to 120 characters.
   <sup>[[link](#style-line-length)]</sup>
 
-* <a name="style-double-quotes"></a>
-  Prefer double-quotes unless your string literal contains " or escape characters you want to suppress.
-  <sup>[[link](#style-double-quotes)]</sup>
+* <a name="style-string-quotes"></a>
+  Adopt a consistent string literal quoting style.
+  <sup>[[link](#style-string-quotes)]</sup>
 
 * <a name="style-hash-aligning"></a>
   If elements of a hash literal span more than one line we're aligning them by keys.
@@ -229,16 +229,16 @@ end
 # bad
 class A
   def test
-    puts 'hello'
-     puts 'world'
+    puts "hello"
+     puts "world"
   end
 end
 
 # bad
 class A
   def test
-    puts 'hello'
-    puts 'world'
+    puts "hello"
+    puts "world"
   end
 
   protected
@@ -255,16 +255,16 @@ end
 # good
 class A
   def test
-    puts 'hello'
-    puts 'world'
+    puts "hello"
+    puts "world"
   end
 end
 
 # good
 class A
   def test
-    puts 'hello'
-    puts 'world'
+    puts "hello"
+    puts "world"
   end
 
   protected
@@ -393,21 +393,21 @@ some_method(x, y, {a: 1, b: 2}, {a: 1, b: 2})
 # bad
 subject { service.call }
 
-it 'test' do
+it "test" do
   expect(subject).to eq value
 end
 
 # ok
 subject(:service_call) { service.call }
 
-it 'test' do
+it "test" do
   expect(service_call).to eq value
 end
 
 # better
 subject { service.call }
 
-it 'test' do
+it "test" do
   is_expected.to eq value
 end
 ```
@@ -418,12 +418,12 @@ end
 
 ```ruby
   # bad
-context 'the display name not present' do
+context "the display name not present" do
   # ...
 end
 
 # good
-context 'when the display name is not present' do
+context "when the display name is not present" do
   # ...
 end
 ```
