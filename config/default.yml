@@ -18,6 +18,9 @@ Bundler/DuplicatedGem:
 Bundler/OrderedGems:
   TreatCommentsAsGroupSeparators: true
 
+Layout/AlignArguments:
+  EnforcedStyle: with_fixed_indentation
+
 Layout/AlignHash:
   EnforcedLastArgumentHashStyle: always_ignore
 
@@ -30,6 +33,9 @@ Layout/EndAlignment:
 
 Layout/IndentationConsistency:
   EnforcedStyle: normal
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
     EnforcedStyle: indented

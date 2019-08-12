@@ -32,6 +32,7 @@ This is a small list of differences which we have when compared with community s
 
 * <a name="style-hash-aligning"></a>
   If elements of a hash literal span more than one line we're aligning them by keys.
+  Also, the first hash key is aligned by an indentation level.
   <sup>[[link](#style-hash-aligning)]</sup>
 
 
@@ -41,22 +42,50 @@ This is a small list of differences which we have when compared with community s
   foo: bar,
    ba: baz
 }
+
 {
   foo: bar,
   ba:  baz
 }
+
+{
+    foo: bar,
+  ba: baz
+}
+
+{
+  foo: {
+         bar: bar,
+         ba: baz
+       }
+}
+
+method_call({
+               its_like: :this
+             })
 
 # good
 {
   foo: bar,
   ba: baz
 }
+
+{
+  foo: {
+    bar: bar,
+    ba: baz
+  }
+}
+
+method_call({
+  no: :difference
+})
 ```
 
-* <a name="style-keyword-arguments-aligning"></a>
-  There is one exception in the rule above when the hash literal is passed as method argument.
-  In this case we just use an indentation level.
-  <sup>[[link](#style-keyword-arguments-aligning)]</sup>
+* <a name="style-arguments-aligning"></a>
+  All arguments on a multi-line method definition are aligning by an indentation level.
+  This rule works as for keywork arguments, as for usual arguments.
+  <sup>[[link](#style-arguments-aligning)]</sup>
 
 ```ruby
 # bad
@@ -66,6 +95,14 @@ do_something(foo: 1,
 # good
 do_something(foo: 1,
   bar: 2)
+
+# good
+foo :bar,
+  :baz
+
+# bad
+foo :bar,
+    :baz
 ```
 
 * <a name="style-parameters-aligning"></a>
