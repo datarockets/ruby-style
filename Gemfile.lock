@@ -31,7 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
   datarockets-style!
   rake (~> 13.0)
 
