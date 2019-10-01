@@ -7,6 +7,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Update rubocop to `0.75.0`.
+* Update rubocop-rspec to `1.36.0`.
+
+### Fixed
+
+* Fix `RSpec/DescribedClass`'s error when `described_class` is used as part of a constant. This is part of rubocop-rspec changes.
 
 ## 0.4.0 (2019-08-13)
 
