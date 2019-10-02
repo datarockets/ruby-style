@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Update rubocop to `0.75.0`.
+
 ## 0.4.0 (2019-08-13)
 
 ### Changed
