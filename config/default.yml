@@ -68,6 +68,9 @@ RSpec/ContextWording:
     - without
     - for
 
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
 RSpec/ImplicitSubject:
   Enabled: false
 

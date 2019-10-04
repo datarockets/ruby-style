@@ -427,3 +427,15 @@ context "when the display name is not present" do
   # ...
 end
 ```
+
+* <a name="rspec-expect-change"></a>
+  Prefer using blocks for change matcher than method calls.
+  <sup>[[link](#rspec-expect-change)]</sup>
+
+```ruby
+# bad
+expect { run }.to change(Foo, :bar)
+
+# good
+expect { run }.to change { Foo.bar }
+```
