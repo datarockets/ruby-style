@@ -2,7 +2,7 @@
 
 Datarockets shared style configs and notes of code-style convensions. Based on the [Rubocop](https://github.com/rubocop-hq/rubocop) util.
 
-This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](STYLE_GUIDE.md).
+This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](doc/STYLE_GUIDE.md).
 
 ## Installation
 
@@ -30,10 +30,36 @@ $ bundle install
 
 Create a `.rubocop.yml` with the following directives:
 
+
+### Ruby application
+
+This config includes specific rules for Ruby application. It works for Ruby gems and no-Rails applications.
+
 ```yaml
 inherit_gem:
   datarockets-style:
-    - config/default.yml
+    - config/ruby.yml
+```
+
+### Rails application
+
+For Rails applications, you can use a specific Rails instead of Ruby config
+
+```yaml
+inherit_gem:
+  datarockets-style:
+    - config/rails.yml
+```
+
+### Rspec config
+
+For Rspec tests, you can add a special rubocop config
+
+```yaml
+inherit_gem:
+  datarockets-style:
+    - config/ruby.yml
+    - config/rspec.yml
 ```
 
 Now, run:

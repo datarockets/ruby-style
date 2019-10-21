@@ -1,17 +1,3 @@
-AllCops:
-  Exclude:
-    - "db/**/*"
-    - "bin/*"
-    - "lib/tasks/**/*"
-    - "config/**/*"
-    - "node_modules/**/*"
-    - "vendor/**/*"
-    - "app/views/**/*"
-    - "config.ru"
-    - "Rakefile"
-
-require: rubocop-rspec
-
 Bundler/DuplicatedGem:
   Enabled: true
 
@@ -44,14 +30,6 @@ Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
   EnforcedStyleForEmptyBraces: no_space
 
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - "spec/**/*"
-
-Metrics/BlockLength:
-  Exclude:
-    - "spec/**/*"
-
 Metrics/LineLength:
   Max: 120
 
@@ -60,19 +38,6 @@ Naming/MemoizedInstanceVariableName:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
-
-RSpec/ContextWording:
-  Prefixes:
-    - when
-    - with
-    - without
-    - for
-
-RSpec/ExpectChange:
-  EnforcedStyle: block
-
-RSpec/ImplicitSubject:
-  Enabled: false
 
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent

@@ -1,0 +1,22 @@
+require: rubocop-rspec
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - for
+
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
+RSpec/ImplicitSubject:
+  Enabled: false

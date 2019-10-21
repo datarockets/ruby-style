@@ -27,7 +27,7 @@ do so.
 * If your change has a corresponding open GitHub issue, prefix the commit message with `[Fix #github-issue-number]`.
 * Make sure to add tests for it. This is important so we don't break it
   in a future version unintentionally.
-* If you add new code-style rule or cop, add some words about it in the [Code Style Notes](STYLE_GUIDE.md).
+* If you add new code-style rule or cop, add some words about it in the [Code Style Notes](doc/STYLE_GUIDE.md) or related files.
 * Add an entry to the [Changelog](CHANGELOG.md) accordingly. See [changelog entry format](#changelog-entry-format).
 * If you deliver new cop, try to suggest and deliver it to the community [rubocop][7] gem.
 * [Squash related commits together][5].
