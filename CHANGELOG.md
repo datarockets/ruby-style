@@ -6,7 +6,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* Update rubocop to `0.75.0`.
+* Update rubocop to `0.75.1`.
 * Update rubocop-rspec to `1.36.0`.
 * Use block style for `RSpec/ExpectChange` cop. ([@r.dubrovsky][])
 
