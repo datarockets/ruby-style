@@ -65,3 +65,17 @@ expect { run }.to change(Foo, :bar)
 # good
 expect { run }.to change { Foo.bar }
 ```
+
+* <a name="rspec-message-spies"></a>
+  Check spies messages post-factum (after calling some methods).
+  <sup>[[link](#rspec-message-spies)]</sup>
+
+```ruby
+# bad
+expect(foo).to receive(:bar)
+foo.bar
+
+# good
+foo.bar
+expect(foo).to have_received(:bar)
+```
