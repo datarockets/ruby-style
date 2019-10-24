@@ -6,6 +6,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Split single rubocop config to smaller (for ruby, rails and rspec). ([@r.dubrovsky][])
 * Update rubocop to `0.75.1`.
 * Update rubocop-rspec to `1.36.0`.
 * Use block style for `RSpec/ExpectChange` cop. ([@r.dubrovsky][])

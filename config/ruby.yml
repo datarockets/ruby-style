@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "lib/tasks/**/*"
+    - "vendor/**/*"
+    - "config.ru"
+    - "Rakefile"
+
+inherit_from: base.yml
