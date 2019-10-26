@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+## 0.5.0 (2019-10-26)
+
 ### Changed
 
 * Split single rubocop config to smaller (for ruby, rails and rspec). ([@r.dubrovsky][])
