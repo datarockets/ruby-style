@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Added
+
+* `style-format` CLI helper for getting formattter list of offenses and files. ([@r.dubrovsky][])
+
 ## 0.5.0 (2019-10-26)
 
 ### Changed

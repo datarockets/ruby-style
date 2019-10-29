@@ -88,6 +88,11 @@ P.S. The string literals in this gem are using double quotes by default.
 
 For an existing project, we suggest to run rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
 
+## Helpers and utils
+
+### Style formatter
+
+WIP
 
 ## Changelog
 

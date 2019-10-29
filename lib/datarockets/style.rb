@@ -1,3 +1,5 @@
+require "datarockets/style/errors_formatter/parser"
+require "datarockets/style/errors_formatter"
 require "datarockets/style/version"
 
 module Datarockets
