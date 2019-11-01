@@ -1,5 +1,6 @@
 AllCops:
   Exclude:
+    - "bundler/**/*"
     - "bin/*"
     - "lib/tasks/**/*"
     - "vendor/**/*"
