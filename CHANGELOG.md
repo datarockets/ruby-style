@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Added `RSpec/ExampleLength` cop to style guide. ([@a.branzeanu][])
+
 ## 0.5.0 (2019-10-26)
 
 ### Changed
@@ -79,3 +83,5 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 [@aleks]: https://github.com/AleksSenkou
 [@ula]: https://github.com/lazycoder9
 [@v.kuzmik]: https://github.com/TheBlackArroVV/
+[@a.branzeanu]: https://github.com/texpert
+
