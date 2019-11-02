@@ -4,10 +4,14 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Added
+
+* [#107](https://github.com/datarockets/datarockets-style/issues/107): Add ToDo list formatter. ([@r.dubrovsky][])
+
 ### Changed
 
 * Update rubocop to `0.76`. ([@r.dubrovsky][])
-* Added `RSpec/ExampleLength` cop to style guide. ([@a.branzeanu][])
+* Change default value for `RSpec/ExampleLength` cop. ([@a.branzeanu][])
 * Disable `RSpec/NestedGroups` cop by default. ([@r.dubrovsky][])
 
 ## 0.5.0 (2019-10-26)

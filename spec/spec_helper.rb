@@ -1,4 +1,5 @@
 require "datarockets/style"
+require "pry"
 
 RSpec.configure do |config|
   config.disable_monkey_patching!
