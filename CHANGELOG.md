@@ -7,6 +7,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Added `RSpec/ExampleLength` cop to style guide. ([@a.branzeanu][])
+* Disable `RSpec/NestedGroups` cop by default. ([@r.dubrovsky][])
 
 ## 0.5.0 (2019-10-26)
 

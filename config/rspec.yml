@@ -27,3 +27,6 @@ RSpec/ImplicitSubject:
 
 RSpec/MessageSpies:
   EnforcedStyle: have_received
+
+RSpec/NestedGroups:
+  Enabled: false
