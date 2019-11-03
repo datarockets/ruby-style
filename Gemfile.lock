@@ -2,20 +2,20 @@ PATH
   remote: .
   specs:
     datarockets-style (0.5.0)
-      rubocop (>= 0.74, < 0.76)
+      rubocop (~> 0.76)
       rubocop-rspec (~> 1.36)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    jaro_winkler (1.5.3)
+    jaro_winkler (1.5.4)
     parallel (1.18.0)
     parser (2.6.5.0)
       ast (~> 2.4.0)
     rainbow (3.0.0)
     rake (13.0.0)
-    rubocop (0.75.1)
+    rubocop (0.76.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
