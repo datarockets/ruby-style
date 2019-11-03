@@ -15,6 +15,10 @@ RSpec/ContextWording:
     - without
     - for
 
+RSpec/ExampleLength:
+  Enabled: true
+  Max: 10
+
 RSpec/ExpectChange:
   EnforcedStyle: block
 

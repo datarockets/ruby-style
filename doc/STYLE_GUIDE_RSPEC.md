@@ -54,6 +54,43 @@ context "when the display name is not present" do
 end
 ```
 
+* <a name="rspec-example-length"></a>
+ A long example is usually more difficult to understand. Consider extracting out some behaviour, e.g. with a `let` block, or a helper method.
+
+  <sup>[[link](#rspec-example-length)]</sup>
+
+```ruby
+# bad
+it 'creates correct deal config object' do
+  expect(ZohoUtil::DealConfig).to receive(:new)
+    .with(
+      deal_name: translated_deal_name,
+      stage_uid: zoho_post.stage_uid,
+      change_existing_stage: zoho_post.change_existing_stage,
+      note_title: translated_note_title,
+      note: translated_note
+    )
+
+  execute_action
+end
+
+# good
+let(:service_arguments) do
+  {
+    deal_name: translated_deal_name,
+    stage_uid: zoho_post.stage_uid,
+    change_existing_stage: zoho_post.change_existing_stage,
+    note_title: translated_note_title,
+    note: translated_note
+  }
+end
+
+it 'creates correct deal config object' do
+  expect(ZohoUtil::DealConfig).to receive(:new).with(**service_arguments)
+  execute_action
+end
+```
+
 * <a name="rspec-expect-change"></a>
   Prefer using blocks for change matcher than method calls.
   <sup>[[link](#rspec-expect-change)]</sup>
