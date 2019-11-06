@@ -88,6 +88,65 @@ P.S. The string literals in this gem are using double quotes by default.
 
 For an existing project, we suggest to run rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
 
+## Formatters
+
+### ToDo list formatter
+
+This formatter allows us to get list of files for some offense and with number of offenses in each file. This file can be useful if you need to fix a large some cop cop step by step.
+
+Result of the formatter is compatible with rubocop config or rubocop todo file.
+
+For running that cop, just print in your command like
+
+```bash
+$ bundle exec rubocop -f TodoListFormatter -r datarockets/style
+Inspecting 10 files
+...CC.CC..
+10 files inspected, 7 offenses detected
+
+Layout/IndentationConsistency
+  Exclude:
+    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 1
+
+Naming/MemoizedInstanceVariableName
+  Exclude:
+    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+
+RSpec/ExampleLength
+  Exclude:
+    - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
+    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
+
+Style/Documentation
+  Exclude:
+    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
+```
+
+#### Autocorrection
+
+If you run the formatter with autocorrection options, the formatter skip corrected cop and does not include it to the result.
+
+```bash
+$ bundle exec rubocop -f TodoListFormatter -r datarockets/style -a
+Inspecting 10 files
+...CC.CC..
+10 files inspected, 7 offenses detected, 1 offenses corrected
+
+Naming/MemoizedInstanceVariableName
+  Exclude:
+    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+
+RSpec/ExampleLength
+  Exclude:
+    - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
+    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
+
+Style/Documentation
+  Exclude:
+    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
+```
 
 ## Changelog
 
