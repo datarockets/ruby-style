@@ -4,7 +4,9 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
-## Fixed
+## 0.6.1 (2019-11-06)
+
+### Fixed
 
 * [#126](https://github.com/datarockets/datarockets-style/issues/126): Result for ToDo list formatter. ([@r.dubrovsky][])
 

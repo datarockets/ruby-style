@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    datarockets-style (0.6.0)
+    datarockets-style (0.6.1)
       rubocop (~> 0.76)
       rubocop-rspec (~> 1.36)
 
