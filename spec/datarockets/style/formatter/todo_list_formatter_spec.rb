@@ -20,18 +20,18 @@ RSpec.describe TodoListFormatter do
           RRR
           3 files inspected, 11 offenses detected
 
-          CopA
+          CopA:
             Exclude:
               - 'lib/datarockets/style/verssion.rb' # 1
               - 'lib/datarockets/style.rb' # 1
               - 'spec/spec_helper.rb' # 2
 
-          CopB
+          CopB:
             Exclude:
               - 'lib/datarockets/style/verssion.rb' # 1
               - 'lib/datarockets/style.rb' # 1
 
-          CopC
+          CopC:
             Exclude:
               - 'lib/datarockets/style/verssion.rb' # 2
               - 'lib/datarockets/style.rb' # 3
@@ -73,12 +73,12 @@ RSpec.describe TodoListFormatter do
             RRR
             3 files inspected, 11 offenses detected, 4 offenses corrected
 
-            CopB
+            CopB:
               Exclude:
                 - 'lib/datarockets/style/verssion.rb' # 1
                 - 'lib/datarockets/style.rb' # 1
 
-            CopC
+            CopC:
               Exclude:
                 - 'lib/datarockets/style/verssion.rb' # 2
                 - 'lib/datarockets/style.rb' # 3
