@@ -104,20 +104,20 @@ Inspecting 10 files
 ...CC.CC..
 10 files inspected, 7 offenses detected
 
-Layout/IndentationConsistency
+Layout/IndentationConsistency:
   Exclude:
     - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 1
 
-Naming/MemoizedInstanceVariableName
+Naming/MemoizedInstanceVariableName:
   Exclude:
     - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
 
-RSpec/ExampleLength
+RSpec/ExampleLength:
   Exclude:
     - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
     - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
 
-Style/Documentation
+Style/Documentation:
   Exclude:
     - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
     - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
@@ -133,16 +133,16 @@ Inspecting 10 files
 ...CC.CC..
 10 files inspected, 7 offenses detected, 1 offenses corrected
 
-Naming/MemoizedInstanceVariableName
+Naming/MemoizedInstanceVariableName:
   Exclude:
     - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
 
-RSpec/ExampleLength
+RSpec/ExampleLength:
   Exclude:
     - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
     - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
 
-Style/Documentation
+Style/Documentation:
   Exclude:
     - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
     - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1

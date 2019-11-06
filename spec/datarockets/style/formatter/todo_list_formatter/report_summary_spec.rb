@@ -16,16 +16,16 @@ RSpec.describe Datarockets::Style::Formatter::TodoListFormatter::ReportSummary d
 
   let(:result) do
     <<~OUTPUT
-      CopA
+      CopA:
         Exclude:
           - 'test1.rb' # 2
           - 'test2.rb' # 1
 
-      CopB
+      CopB:
         Exclude:
           - 'test3.rb' # 2
 
-      CopC
+      CopC:
         Exclude:
           - 'test1.rb' # 1
 
