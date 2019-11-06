@@ -6,6 +6,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop to `0.76`. ([@r.dubrovsky][])
 * Added `RSpec/ExampleLength` cop to style guide. ([@a.branzeanu][])
 * Disable `RSpec/NestedGroups` cop by default. ([@r.dubrovsky][])
 
