@@ -10,6 +10,11 @@ This style guide recommends best practices for writing a clear Rspec tests and e
   We're not limiting a length of rspec files.
   <sup>[[link](#rspec-file-length)]</sup>
 
+* <a name="rspec-nested-groups"></a>
+  Nested context is a nice approach for organizing your code and tests structure.
+  So there are not any limits for deep or nested groups.
+  <sup>[[link](#rspec-nested-groups)]</sup>
+
 * <a name="rspec-subject"></a>
   Each subject should be named and we should not use `subject` in our test cases.
   Prefer to use `is_expected` that `expect(subject_name)` for small tests.
