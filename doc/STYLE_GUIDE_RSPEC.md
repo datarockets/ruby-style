@@ -121,3 +121,35 @@ foo.bar
 foo.bar
 expect(foo).to have_received(:bar)
 ```
+
+* <a name="rspec-prefer-expect"></a>
+  Prefer using `expect` instead of `should` matchers.
+  <sup>[[link](#rspec-prefer-expect)]</sup>
+
+```ruby
+# bad
+calculator.compute(line_item).should == 5
+
+# good
+expect(calculator.compute(line_item)).to eq(5)
+```
+
+**Note:** this is a Part of Rspec configuration. Read more [by link](https://github.com/rubocop-hq/rubocop-rspec#enforcing-should-vs-expect-syntax).
+
+* <a name="rspec-top-rspec"></a>
+  Not to use `Rspec.describe` in your test and just write `describe` instead.
+  <sup>[[link](#rspec-top-rspec)]</sup>
+
+```ruby
+# bad
+RSpec.describe MyClass do
+  # ...
+end
+
+# good
+describe MyClass do
+  # ...
+end
+```
+
+**Note:** this is a Part of Rspec configuration. Read more [by link](https://github.com/rubocop-hq/rubocop-rspec#enforcing-an-explicit-rspec-receiver-for-top-level-methods-disabling-monkey-patching).

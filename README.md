@@ -148,6 +148,12 @@ Style/Documentation:
     - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
 ```
 
+## Non-goals of RuboCop
+
+### Rspec configuration
+
+RSpec-core library provides some configuration rules which provides some linting rules itself. Read more about it in [RuboCop Rspec non-goals topic](https://github.com/rubocop-hq/rubocop-rspec#non-goals-of-rubocop-rspec).
+
 ## Changelog
 
 Datarockets Style's changelog is available [here](CHANGELOG.md).
