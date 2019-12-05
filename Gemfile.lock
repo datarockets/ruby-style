@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    datarockets-style (0.6.1)
+    datarockets-style (0.6.2)
       rubocop (~> 0.76)
       rubocop-rspec (~> 1.36)
 
@@ -45,7 +45,7 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
-    rubocop-rspec (1.36.0)
+    rubocop-rspec (1.37.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
     unicode-display_width (1.6.0)
@@ -60,4 +60,4 @@ DEPENDENCIES
   rspec (~> 3.7)
 
 BUNDLED WITH
-   1.16.1
+   1.16.3

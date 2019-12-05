@@ -4,6 +4,17 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+
+## 0.6.2(2019-12-05)
+
+### Changed
+
+* Update rubocop to `0.77.0`.
+
+## Fixed
+
+* [#137](https://github.com/datarockets/datarockets-style/issues/137): Usage of rubocop 0.77.0 version causes errors. ([@d.kachur][])
+
 ## 0.6.1 (2019-11-06)
 
 ### Fixed
