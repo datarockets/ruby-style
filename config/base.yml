@@ -4,13 +4,13 @@ Bundler/DuplicatedGem:
 Bundler/OrderedGems:
   TreatCommentsAsGroupSeparators: true
 
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: always_ignore
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   IndentationWidth: 2
 
@@ -20,7 +20,7 @@ Layout/EndAlignment:
 Layout/IndentationConsistency:
   EnforcedStyle: normal
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
