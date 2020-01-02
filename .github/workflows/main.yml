@@ -33,6 +33,9 @@ jobs:
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
 
-    - name: Run rspec
-      run: bundle exec rspec spec
+    - name: Run linter
+      run: make lint
+
+    - name: Run tests
+      run: make test
 
