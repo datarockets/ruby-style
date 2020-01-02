@@ -151,7 +151,7 @@ def foo(
 end
 ```
 
-* <a name="style-multiline-method-call-indentation">
+* <a name="style-multiline-method-call-indentation"></a>
   The indentation of the method name part in method calls that span more than one line are aligning by an indentation level.
   <sup>[[link](#style-multiline-method-call-indentation)]</sup>
 
