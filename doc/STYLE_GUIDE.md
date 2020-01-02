@@ -18,11 +18,11 @@ This is a small list of differences which we have when compared with community s
 ## Bundler
 
 * <a name="bundler-add-once"></a>
-  A Gem's requirements should be listed only once in a Gemfile
+  A Gem's requirements should be listed only once in a Gemfile.
   <sup>[[link](#bundler-add-once)]</sup>
 
 * <a name="bundler-ordering"></a>
-  Gems should be alphabetically sorted within groups. Also you can use a line comment as a group separator.
+  Gems should be alphabetically sorted within groups. Also, you can use a line comment as a group separator.
   <sup>[[link](#bundler-ordering)]</sup>
 
 ## Style
@@ -36,7 +36,7 @@ This is a small list of differences which we have when compared with community s
   <sup>[[link](#style-string-quotes)]</sup>
 
 * <a name="style-hash-aligning"></a>
-  If elements of a hash literal span more than one line we're aligning them by keys.
+  If elements of a hash literal span more than one line, we're aligning them by keys.
   Also, the first hash key is aligned by an indentation level.
   <sup>[[link](#style-hash-aligning)]</sup>
 
@@ -89,7 +89,7 @@ method_call({
 
 * <a name="style-arguments-aligning"></a>
   All arguments on a multi-line method definition are aligning by an indentation level.
-  This rule works as for keywork arguments, as for usual arguments.
+  This rule works as for keyword arguments, as for usual arguments.
   <sup>[[link](#style-arguments-aligning)]</sup>
 
 ```ruby
@@ -227,7 +227,7 @@ end
 ```
 
 * <a name="style-method-indentations"></a>
-  We're prefering a ruby style for methods indentations, not rails. You can check it [here](https://github.com/rubocop-hq/ruby-style-guide#indent-public-private-protected).
+  We're preferring a ruby style for methods indentations, not rails. You can check it [here](https://github.com/rubocop-hq/ruby-style-guide#indent-public-private-protected).
   <sup>[[link](#style-method-indentations)]</sup>
 
 ```ruby
@@ -285,7 +285,7 @@ end
 ```
 
 * <a name="style-hash-spaces"></a>
-  For hash literals not to add scapes after `{` or before `}`. We want to have the advantage of adding visual difference between block and hash literals.
+  For hash literals not to add spaces after `{` or before `}`. We want to have the advantage of adding visual difference between block and hash literals.
   <sup>[[link](#style-hash-spaces)]</sup>
 
 ```ruby
@@ -338,7 +338,7 @@ end
 ```
 
 * <a name="style-cached-instance-variable-name"></a>
-  Use leading underscores in cached instance variable name
+  Use leading underscores in cached instance variable name.
   <sup>[[link](#style-cached-instance-variable-name)]</sup>
 
 ```ruby
@@ -359,8 +359,8 @@ end
 ```
 
 * <a name="style-magic-link"></a>
-  There are not any requried rules for `frozen_string_literal` magic url.
-  Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends  on the project.
+  There are not any required rules for `frozen_string_literal` magic url.
+  Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends on the project.
   So set up it on the local rubocop config manually.
   <sup>[[link](#style-magic-link)]</sup>
 

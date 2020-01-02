@@ -5,7 +5,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ## master (unreleased)
 
 
-## 0.6.2(2019-12-05)
+## 0.6.2 (2019-12-05)
 
 ### Changed
 
@@ -52,11 +52,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Update rubocop-rspec to `1.35.0`. ([@r.dubrovsky][])
-* Use contenxt-dependent style for curly braces around hash params. ([@v.kuzmik][])
+* Use context-dependent style for curly braces around hash params. ([@v.kuzmik][])
 * Use leading underscores in cached instance variable name (cop: `Naming/MemoizedInstanceVariableName`). ([@ula][])
-* Allow use `for` wiht `RSpec/ContextWording` cop. ([@r.dubrovsky][])
-* Change `Layout/AlignArguments` and `Layout/IndentFirstHashElement` cops for aliging arguments with fixed indentation. ([@r.dubrovsky][])
-* Enable `Layout/MultilineMethodCallIndentation` cop for aliging arguments with fixed indentation. ([@r.dubrovsky][], [@ula][])
+* Allow use `for` with `RSpec/ContextWording` cop. ([@r.dubrovsky][])
+* Change `Layout/AlignArguments` and `Layout/IndentFirstHashElement` cops for aligning arguments with fixed indentation. ([@r.dubrovsky][])
+* Enable `Layout/MultilineMethodCallIndentation` cop for aligning arguments with fixed indentation. ([@r.dubrovsky][], [@ula][])
 
 ## 0.3.0 (2019-08-02)
 
@@ -78,7 +78,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Update rubocop to `0.73.0`. ([@r.dubrovsky][])
-* Use prefered variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`). ([@ula][])
+* Use preferred variable name in rescued exceptions (cop: `Naming/RescuedExceptionsVariableName`). ([@ula][])
 * Disable `RSpec/ImplicitSubject` cop for rspec files. ([@r.dubrovsky][])
 
 ## 0.1.0 (2019-06-27)
@@ -97,16 +97,17 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Change the limit for size of line to 120 symbols. ([@r.dubrovsky][])
 * Disable `Metrics/BlockLength` cop for rspec files. ([@r.dubrovsky][])
 * Exclude rubocop checking for some config directories. ([@r.dubrovsky][])
-* Enable prafering double quotes for string literals. ([@r.dubrovsky][])
-* Do not add spaces beetwen hash literal braces (cop `Layout/SpaceInsideHashLiteralBraces`). ([@r.dubrovsky][])
+* Enable preferring double quotes for string literals. ([@r.dubrovsky][])
+* Do not add spaces between hash literal braces (cop `Layout/SpaceInsideHashLiteralBraces`). ([@r.dubrovsky][])
 * Prefer normal style for `Layout/IndentationConsistency` cop for Rails apps too. ([@r.dubrovsky][])
 * Change style to `variable` for `Layout/EndAlignment` cop. ([@r.dubrovsky][])
 * Change style to `with_fixed_indentation` with indentation width 2 for `Layout/AlignParameter` cop. ([@r.dubrovsky][])
-* Always ingone hash aligning for key word arguments. (cop: `Layout/AlignHash`) ([@r.dubrovsky][])
+* Always ignore hash aligning for key word arguments. (cop: `Layout/AlignHash`) ([@r.dubrovsky][])
 
 [@r.dubrovsky]: https://github.com/roman-dubrovsky
 [@aleks]: https://github.com/AleksSenkou
 [@ula]: https://github.com/lazycoder9
 [@v.kuzmik]: https://github.com/TheBlackArroVV/
 [@a.branzeanu]: https://github.com/texpert
+[@nikitasakov]: https://github.com/nikitasakov
 
