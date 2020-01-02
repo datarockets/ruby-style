@@ -42,6 +42,9 @@ Naming/RescuedExceptionsVariableName:
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
+Style/Documentation:
+  Enabled: false
+
 Style/EmptyMethod:
   EnforcedStyle: expanded
 

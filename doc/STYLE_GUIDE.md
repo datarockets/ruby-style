@@ -378,3 +378,20 @@ some_method(x, y, {a: 1, b: 2}, a: 1, b: 2)
 some_method(x, y, a: 1, b: 2)
 some_method(x, y, {a: 1, b: 2}, {a: 1, b: 2})
 ```
+
+* <a name="style-documentation"></a>
+  Top-level documentation requirement for classes and modules is disabled by default
+  <sup>[[link](#style-documentation)</sup>
+
+```ruby
+# good
+class Person
+  # ...
+end
+
+# good
+# Description/Explanation of Person class
+class Person
+  # ...
+end
+```

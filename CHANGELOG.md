@@ -4,6 +4,9 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Disable `Style/Documentation` cop by default. ([@ula][])
 
 ## 0.6.2(2019-12-05)
 
