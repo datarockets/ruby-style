@@ -16,7 +16,7 @@ This style guide recommends best practices for writing a clear Rspec tests and e
   <sup>[[link](#rspec-nested-groups)]</sup>
 
 * <a name="rspec-subject"></a>
-  Each subject should be named and we should not use `subject` in our test cases.
+  Each subject should be named, and we should not use `subject` in our test cases.
   Prefer to use `is_expected` that `expect(subject_name)` for small tests.
   <sup>[[link](#rspec-subject)]</sup>
 
@@ -60,7 +60,7 @@ end
 ```
 
 * <a name="rspec-example-length"></a>
- A long example is usually more difficult to understand. Consider extracting out some behaviour, e.g. with a `let` block, or a helper method.
+ A long example is usually more difficult to understand. Consider extracting out some behavior, e.g. with a `let` block, or a helper method.
 
   <sup>[[link](#rspec-example-length)]</sup>
 

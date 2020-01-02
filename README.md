@@ -1,6 +1,6 @@
 # Datarockets::Style [![Gem Version](https://badge.fury.io/rb/datarockets-style.svg)](https://badge.fury.io/rb/datarockets-style)
 
-Datarockets shared style configs and notes of code-style convensions. Based on the [Rubocop](https://github.com/rubocop-hq/rubocop) util.
+Datarockets shared style configs and notes of code-style conventions. Based on the [Rubocop](https://github.com/rubocop-hq/rubocop) util.
 
 This config enforces many of the guidelines outlined in the datarockets [Ruby Style Guide](doc/STYLE_GUIDE.md).
 
@@ -86,13 +86,13 @@ P.S. The string literals in this gem are using double quotes by default.
 
 ##### Tips
 
-For an existing project, we suggest to run rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
+For an existing project, we suggest running rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
 
 ## Formatters
 
 ### ToDo list formatter
 
-This formatter allows us to get list of files for some offense and with number of offenses in each file. This file can be useful if you need to fix a large some cop cop step by step.
+This formatter allows us to get list of files for some offense and with number of offenses in each file. This file can be useful if you need to fix a large some cop step by step.
 
 Result of the formatter is compatible with rubocop config or rubocop todo file.
 
