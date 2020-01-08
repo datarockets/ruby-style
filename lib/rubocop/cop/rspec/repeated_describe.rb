@@ -25,9 +25,7 @@ module RuboCop
         def on_begin(node)
           return unless several_describes?(node)
 
-          repeated_describes(node).each do |child|
-            add_offense(child)
-          end
+          repeated_describes(node).each { |child| add_offense(child) }
         end
 
         private
