@@ -1,6 +1,18 @@
 module RuboCop
   module Cop
     module RSpec
+      # Check for repeated describes
+      #
+      # @example
+      #
+      #    describe 'cool feature' do
+      #      # example group
+      #    end
+      #
+      #    describe 'cool feature' do
+      #      # example group
+      #    end
+      #
       class RepeatedDescribe < Cop
         MSG = "Don't repeat describe descriptions".freeze
 
