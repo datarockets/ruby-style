@@ -24,7 +24,7 @@ Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
-    EnforcedStyle: indented
+  EnforcedStyle: indented
 
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
