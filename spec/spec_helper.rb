@@ -1,7 +1,12 @@
 require "datarockets/style"
+require "rubocop/cop/rspec"
+require "rubocop/rspec/support"
+require "rubocop"
 require "pry"
 
 RSpec.configure do |config|
+  config.include RuboCop::RSpec::ExpectOffense
+
   config.disable_monkey_patching!
   config.order = :random
   Kernel.srand config.seed
