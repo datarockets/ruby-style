@@ -13,7 +13,7 @@ module RuboCop
       #      # example group
       #    end
       #
-      class RepeatedDescribe < Cop
+      class RepeatedDescribeDescription < Cop
         MSG = "Don't repeat describe descriptions".freeze
 
         def_node_matcher :several_describes?, <<-PATTERN
