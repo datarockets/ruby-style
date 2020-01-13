@@ -1,8 +1,5 @@
 require:
-  - ./lib/rubocop/cop/rspec/repeated_describe_description.rb
-  - ./lib/rubocop/cop/rspec/repeated_describe_body.rb
-  - ./lib/rubocop/cop/rspec/repeated_context_description.rb
-  - ./lib/rubocop/cop/rspec/repeated_context_body.rb
+  - ./lib/rubocop/cop/rspec
 
 inherit_from:
   - config/ruby.yml
