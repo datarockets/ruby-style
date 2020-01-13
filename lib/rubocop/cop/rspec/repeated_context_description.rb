@@ -5,11 +5,11 @@ module RuboCop
       #
       # @example
       #
-      #    describe 'cool feature' do
+      #    context 'cool feature' do
       #      # example group
       #    end
       #
-      #    describe 'cool feature' do
+      #    context 'cool feature' do
       #      # example group
       #    end
       #
