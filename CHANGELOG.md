@@ -8,6 +8,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 * [#80](https://github.com/datarockets/datarockets-style/issues/80): Allows adds additional files and directories to excluding block for rubocop. ([@nikitasakov][])
 
+### Added
+
+* [#130](https://github.com/datarockets/datarockets-style/issues/130): Layout/ArrayAlignmentExtended cop ([@nikitasakov][])
+
 ## 0.6.2 (2019-12-05)
 
 ### Changed

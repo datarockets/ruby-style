@@ -151,6 +151,27 @@ def foo(
 end
 ```
 
+* <a name="style-array-aligning"></a>
+  The elements of a multi-line array are aligning by an indentation level.
+  <sup>[[link](#style-array-aligning)]</sup>
+
+```ruby
+# bad
+
+array = [1, 2, 3,
+         4, 5, 6]
+
+# bad
+
+array = [1, 2, 3,
+      4, 5, 6]
+
+# good
+
+array = [1, 2, 3,
+  4, 5, 6]
+```
+
 * <a name="style-multiline-method-call-indentation"></a>
   The indentation of the method name part in method calls that span more than one line are aligning by an indentation level.
   <sup>[[link](#style-multiline-method-call-indentation)]</sup>
