@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+## 0.7.0 (2020-01-27)
+
 ### Added
 
 * [#130](https://github.com/datarockets/datarockets-style/issues/130): Add Layout/ArrayAlignmentExtended cop ([@nikitasakov][])
