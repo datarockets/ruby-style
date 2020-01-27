@@ -51,6 +51,9 @@ Layout/EndAlignment:
 Layout/IndentationConsistency:
   EnforcedStyle: normal
 
+Layout/LineLength:
+  Max: 120
+
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
@@ -60,9 +63,6 @@ Layout/MultilineMethodCallIndentation:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
   EnforcedStyleForEmptyBraces: no_space
-
-Metrics/LineLength:
-  Max: 120
 
 Naming/MemoizedInstanceVariableName:
   EnforcedStyleForLeadingUnderscores: required
