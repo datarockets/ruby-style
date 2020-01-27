@@ -4,13 +4,18 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
-## Fixed
-
-* [#80](https://github.com/datarockets/datarockets-style/issues/80): Allows adds additional files and directories to excluding block for rubocop. ([@nikitasakov][])
-
 ### Added
 
 * [#130](https://github.com/datarockets/datarockets-style/issues/130): Layout/ArrayAlignmentExtended cop ([@nikitasakov][])
+
+### Changed
+
+* Update rubocop to `0.79.0`.
+* Update rubocop-rspec to `1.37.1`.
+
+## Fixed
+
+* [#80](https://github.com/datarockets/datarockets-style/issues/80): Allows adds additional files and directories to excluding block for rubocop. ([@nikitasakov][])
 
 ## 0.6.2 (2019-12-05)
 
