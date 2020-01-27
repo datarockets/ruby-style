@@ -153,3 +153,32 @@ end
 ```
 
 **Note:** this is a Part of Rspec configuration. Read more [by link](https://github.com/rubocop-hq/rubocop-rspec#enforcing-an-explicit-rspec-receiver-for-top-level-methods-disabling-monkey-patching).
+
+* <a name="rspec-let-setup"></a>
+  We allow using let! in your test, but suggest not to use it for setting up testing data.
+  <sup>[[link](#rspec-let-setup)]</sup>
+
+```ruby
+# ok
+let!(:my_widget) { create(:widget) }
+
+it "counts widgets" do
+  expect(Widget.count).to eq(1)
+end
+
+# better
+before do
+  create(:widget)
+end
+
+it "counts widgets" do
+  expect(Widget.count).to eq(1)
+end
+
+# good
+let!(:my_widget) { create(:widget) }
+
+it "returns the last widget" do
+  expect(Widget.last).to eq my_widget
+end
+```

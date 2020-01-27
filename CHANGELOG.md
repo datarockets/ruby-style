@@ -13,11 +13,13 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Update rubocop to `0.79.0`.
 * Update rubocop-rspec to `1.37.1`.
 * Add notes for setting up Rspec configuration for fixing Rspec internal style issues. ([@r.dubrovsky][])
+* [#58](https://github.com/datarockets/datarockets-style/issues/58): Disable `RSpec/LetSetup` cop by default. ([@ula][])
 
-## Fixed
+### Fixed
 
 * [#80](https://github.com/datarockets/datarockets-style/issues/80): Allows adding additional files and directories to excluding block for rubocop. ([@nikitasakov][])
 * Fix documentation issues. ([@ula][])
+
 
 ## 0.6.2 (2019-12-05)
 

@@ -25,6 +25,9 @@ RSpec/ExpectChange:
 RSpec/ImplicitSubject:
   Enabled: false
 
+RSpec/LetSetup:
+  Enabled: false
+
 RSpec/MessageSpies:
   EnforcedStyle: have_received
 
