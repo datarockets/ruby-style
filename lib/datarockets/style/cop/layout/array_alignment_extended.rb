@@ -37,8 +37,7 @@ module Datarockets
         class ArrayAlignmentExtended < RuboCop::Cop::Cop
           include RuboCop::Cop::Alignment
 
-          ALIGN_PARAMS_MSG = "Align the elements of an array literal if they span more " \
-            "than one line."
+          ALIGN_PARAMS_MSG = "Align the elements of an array literal if they span more than one line."
 
           FIXED_INDENT_MSG = "Use one level of indentation for elements " \
             "following the first line of a multi-line array."
