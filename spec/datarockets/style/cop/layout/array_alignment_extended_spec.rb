@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable RSpec/ExampleLength
-
 RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
   subject(:cop) { described_class.new(config) }
 
@@ -11,7 +9,19 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
                           "Width" => indentation_width
                         })
   end
+
   let(:indentation_width) { 2 }
+
+  let(:aligned_array_with_first_element_on_new_line) do
+    <<~RUBY
+      array = [
+        a,
+        b,
+        c,
+        d
+      ]
+    RUBY
+  end
 
   context "when aligned with first parameter" do
     let(:cop_config) do
@@ -20,8 +30,8 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
       }
     end
 
-    it "registers an offense and corrects misaligned array elements" do
-      expect_offense(<<~RUBY)
+    let(:not_aligned_array) do
+      <<~RUBY
         array = [a,
            b,
            ^ Align the elements of an array literal if they span more than one line.
@@ -30,8 +40,10 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
            d]
            ^ Align the elements of an array literal if they span more than one line.
       RUBY
+    end
 
-      expect_correction(<<~RUBY)
+    let(:aligned_array) do
+      <<~RUBY
         array = [a,
                  b,
                  c,
@@ -39,13 +51,75 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
       RUBY
     end
 
-    it "accepts aligned array keys" do
-      expect_no_offenses(<<~RUBY)
-        array = [a,
-                 b,
-                 c,
-                 d]
+    let(:not_aligned_array_within_array_with_wrong_indentation) do
+      <<~RUBY
+        [:l1,
+         [:l2,
+           [:l3,
+            [:l4]]]]
       RUBY
+    end
+
+    let(:not_aligned_array_with_not_aligned_heredoc_strings) do
+      <<~RUBY
+        var = [
+               { :type => 'something',
+                 :sql => <<EOF
+        Select something
+        from atable
+        EOF
+               },
+              { :type => 'something',
+              ^^^^^^^^^^^^^^^^^^^^^^^ Align the elements of an array literal if they span more than one line.
+                :sql => <<EOF
+        Select something
+        from atable
+        EOF
+              }
+        ]
+      RUBY
+    end
+
+    let(:aligned_array_with_not_aligned_heredoc_strings) do
+      <<~RUBY
+        var = [
+               { :type => 'something',
+                 :sql => <<EOF
+        Select something
+        from atable
+        EOF
+               },
+               { :type => 'something',
+                 :sql => <<EOF
+        Select something
+        from atable
+        EOF
+               }
+        ]
+      RUBY
+    end
+
+    let(:not_aligned_array_with_first_element_on_new_line) do
+      <<~RUBY
+        array = [
+          a,
+           b,
+           ^ Align the elements of an array literal if they span more than one line.
+          c,
+           d
+           ^ Align the elements of an array literal if they span more than one line.
+        ]
+      RUBY
+    end
+
+    it "registers an offense and corrects misaligned array elements" do
+      expect_offense(not_aligned_array)
+
+      expect_correction(aligned_array)
+    end
+
+    it "accepts aligned array keys" do
+      expect_no_offenses(aligned_array)
     end
 
     it "accepts single line array" do
@@ -76,12 +150,7 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
              [:l4]]]]
       RUBY
 
-      expect_correction(<<~RUBY)
-        [:l1,
-         [:l2,
-           [:l3,
-            [:l4]]]]
-      RUBY
+      expect_correction(not_aligned_array_within_array_with_wrong_indentation)
     end
 
     it "does not auto-correct array within array with too little indentation" do
@@ -94,82 +163,23 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
            [:l4]]]]
       RUBY
 
-      expect_correction(<<~RUBY)
-        [:l1,
-         [:l2,
-           [:l3,
-            [:l4]]]]
-      RUBY
+      expect_correction(not_aligned_array_within_array_with_wrong_indentation)
     end
 
     it "does not indent heredoc strings in autocorrect" do
-      expect_offense(<<~RUBY)
-        var = [
-               { :type => 'something',
-                 :sql => <<EOF
-        Select something
-        from atable
-        EOF
-               },
-              { :type => 'something',
-              ^^^^^^^^^^^^^^^^^^^^^^^ Align the elements of an array literal if they span more than one line.
-                :sql => <<EOF
-        Select something
-        from atable
-        EOF
-              }
-        ]
-      RUBY
+      expect_offense(not_aligned_array_with_not_aligned_heredoc_strings)
 
-      expect_correction(<<~RUBY)
-        var = [
-               { :type => 'something',
-                 :sql => <<EOF
-        Select something
-        from atable
-        EOF
-               },
-               { :type => 'something',
-                 :sql => <<EOF
-        Select something
-        from atable
-        EOF
-               }
-        ]
-      RUBY
+      expect_correction(aligned_array_with_not_aligned_heredoc_strings)
     end
 
     it "accepts the first element being on a new row" do
-      expect_no_offenses(<<~RUBY)
-        array = [
-          a,
-          b,
-          c,
-          d
-        ]
-      RUBY
+      expect_no_offenses(aligned_array_with_first_element_on_new_line)
     end
 
     it "registers an offense and corrects misaligned array elements if the first element being on a new row" do
-      expect_offense(<<~RUBY)
-        array = [
-          a,
-           b,
-           ^ Align the elements of an array literal if they span more than one line.
-          c,
-           d
-           ^ Align the elements of an array literal if they span more than one line.
-        ]
-      RUBY
+      expect_offense(not_aligned_array_with_first_element_on_new_line)
 
-      expect_correction(<<~RUBY)
-        array = [
-          a,
-          b,
-          c,
-          d
-        ]
-      RUBY
+      expect_correction(aligned_array_with_first_element_on_new_line)
     end
   end
 
@@ -180,8 +190,8 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
       }
     end
 
-    it "registers an offense and corrects misaligned array elements" do
-      expect_offense(<<~RUBY)
+    let(:not_aligned_array) do
+      <<~RUBY
         array = [a,
            b,
            ^ Use one level of indentation for elements following the first line of a multi-line array.
@@ -189,8 +199,10 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
            d]
            ^ Use one level of indentation for elements following the first line of a multi-line array.
       RUBY
+    end
 
-      expect_correction(<<~RUBY)
+    let(:aligned_array) do
+      <<~RUBY
         array = [a,
           b,
           c,
@@ -198,13 +210,75 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
       RUBY
     end
 
-    it "accepts aligned array keys" do
-      expect_no_offenses(<<~RUBY)
-        array = [a,
-          b,
-          c,
-          d]
+    let(:not_aligned_array_within_array_with_wrong_indentation) do
+      <<~RUBY
+        [:l1,
+          [:l2,
+             [:l3,
+               [:l4]]]]
       RUBY
+    end
+
+    let(:not_aligned_array_with_not_aligned_heredoc_strings) do
+      <<~RUBY
+        var = [
+          { :type => 'something',
+            :sql => <<EOF
+        Select something
+        from atable
+        EOF
+          },
+         { :type => 'something',
+         ^^^^^^^^^^^^^^^^^^^^^^^ Use one level of indentation for elements following the first line of a multi-line array.
+           :sql => <<EOF
+        Select something
+        from atable
+        EOF
+         }
+        ]
+      RUBY
+    end
+
+    let(:aligned_array_with_not_aligned_heredoc_strings) do
+      <<~RUBY
+        var = [
+          { :type => 'something',
+            :sql => <<EOF
+        Select something
+        from atable
+        EOF
+          },
+          { :type => 'something',
+            :sql => <<EOF
+        Select something
+        from atable
+        EOF
+          }
+        ]
+      RUBY
+    end
+
+    let(:not_aligned_array_with_first_element_on_new_line) do
+      <<~RUBY
+        array = [
+          a,
+           b,
+           ^ Use one level of indentation for elements following the first line of a multi-line array.
+          c,
+           d
+           ^ Use one level of indentation for elements following the first line of a multi-line array.
+        ]
+      RUBY
+    end
+
+    it "registers an offense and corrects misaligned array elements" do
+      expect_offense(not_aligned_array)
+
+      expect_correction(aligned_array)
+    end
+
+    it "accepts aligned array keys" do
+      expect_no_offenses(aligned_array)
     end
 
     it "accepts single line array" do
@@ -235,12 +309,7 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
                 [:l4]]]]
       RUBY
 
-      expect_correction(<<~RUBY)
-        [:l1,
-          [:l2,
-             [:l3,
-               [:l4]]]]
-      RUBY
+      expect_correction(not_aligned_array_within_array_with_wrong_indentation)
     end
 
     it "does not auto-correct array within array with too little indentation" do
@@ -248,89 +317,28 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended do
         [:l1,
          [:l2,
          ^^^^^ Use one level of indentation for elements following the first line of a multi-line array.
-          [:l3,
-          ^^^^^ Use one level of indentation for elements following the first line of a multi-line array.
-            [:l4]]]]
+            [:l3,
+            ^^^^^ Use one level of indentation for elements following the first line of a multi-line array.
+              [:l4]]]]
       RUBY
 
-      expect_correction(<<~RUBY)
-        [:l1,
-          [:l2,
-           [:l3,
-             [:l4]]]]
-      RUBY
+      expect_correction(not_aligned_array_within_array_with_wrong_indentation)
     end
 
     it "does not indent heredoc strings in autocorrect" do
-      expect_offense(<<~RUBY)
-        var = [
-          { :type => 'something',
-            :sql => <<EOF
-        Select something
-        from atable
-        EOF
-          },
-         { :type => 'something',
-         ^^^^^^^^^^^^^^^^^^^^^^^ Use one level of indentation for elements following the first line of a multi-line array.
-           :sql => <<EOF
-        Select something
-        from atable
-        EOF
-         }
-        ]
-      RUBY
+      expect_offense(not_aligned_array_with_not_aligned_heredoc_strings)
 
-      expect_correction(<<~RUBY)
-        var = [
-          { :type => 'something',
-            :sql => <<EOF
-        Select something
-        from atable
-        EOF
-          },
-          { :type => 'something',
-            :sql => <<EOF
-        Select something
-        from atable
-        EOF
-          }
-        ]
-      RUBY
+      expect_correction(aligned_array_with_not_aligned_heredoc_strings)
     end
 
     it "accepts the first element being on a new row" do
-      expect_no_offenses(<<~RUBY)
-        array = [
-          a,
-          b,
-          c,
-          d
-        ]
-      RUBY
+      expect_no_offenses(aligned_array_with_first_element_on_new_line)
     end
 
     it "registers an offense and corrects misaligned array elements if the first element being on a new row" do
-      expect_offense(<<~RUBY)
-        array = [
-          a,
-           b,
-           ^ Use one level of indentation for elements following the first line of a multi-line array.
-          c,
-           d
-           ^ Use one level of indentation for elements following the first line of a multi-line array.
-        ]
-      RUBY
+      expect_offense(not_aligned_array_with_first_element_on_new_line)
 
-      expect_correction(<<~RUBY)
-        array = [
-          a,
-          b,
-          c,
-          d
-        ]
-      RUBY
+      expect_correction(aligned_array_with_first_element_on_new_line)
     end
   end
 end
-
-# rubocop:enable RSpec/ExampleLength

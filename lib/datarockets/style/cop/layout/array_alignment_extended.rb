@@ -64,14 +64,14 @@ module Datarockets
           end
 
           def base_column(node, args)
-            if fixed_indentation?
-              lineno = target_method_lineno(node)
-              line = node.source_range.source_buffer.source_line(lineno)
-              indentation_of_line = /\S.*/.match(line).begin(0)
-              indentation_of_line + configured_indentation_width
-            else
-              display_column(args.first.source_range)
-            end
+            fixed_indentation? ? line_indentation(node) : display_column(args.first.source_range)
+          end
+
+          def line_indentation(node)
+            lineno = target_method_lineno(node)
+            line = node.source_range.source_buffer.source_line(lineno)
+            line_indentation = /\S.*/.match(line).begin(0)
+            line_indentation + configured_indentation_width
           end
 
           def target_method_lineno(node)
