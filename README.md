@@ -88,6 +88,10 @@ P.S. The string literals in this gem are using double quotes by default.
 
 For an existing project, we suggest running rubocop with both styles and choose which has fewer offenses (which is more popular in the current project).
 
+### Custom cops
+
+We have custom cops. You can find specification for them [here](manual).
+
 ## Formatters
 
 ### ToDo list formatter
