@@ -51,3 +51,24 @@ Name | Default value | Configurable values
 --- | --- | ---
 EnforcedStyle | `with_first_parameter` | `with_first_parameter`, `with_fixed_indentation`
 IndentationWidth | `<none>` | Integer
+
+# Style
+
+## Style/NestedInterpolation
+
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | No | 0.8.0 | -
+
+This cop checks nested interpolations
+
+### Example
+
+```ruby
+# bad
+"Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}"
+
+# good
+user_name = user.blank? ? 'guest' : "dear #{user.name}"
+"Hello, #{user_name}"
+```

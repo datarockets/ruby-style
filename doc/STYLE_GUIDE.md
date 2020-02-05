@@ -35,6 +35,19 @@ This is a small list of differences which we have when compared with community s
   Adopt a consistent string literal quoting style.
   <sup>[[link](#style-string-quotes)]</sup>
 
+* <a name="style-nested-interpolation"></a>
+  Avoid using nested interpolation.
+   <sup>[[link](#style-nested-interpolation)]</sup>
+
+```ruby
+# bad
+"Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}"
+
+# good
+user_name = user.blank? ? 'guest' : "dear #{user.name}"
+"Hello, #{user_name}"
+```
+
 * <a name="style-hash-aligning"></a>
   If elements of a hash literal span more than one line, we're aligning them by keys.
   Also, the first hash key is aligned by an indentation level.
