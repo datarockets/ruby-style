@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Added
+
+* Enable `rubocop-rails` cops for rails config. ([@ula][])
+
 ## 0.7.0 (2020-01-27)
 
 ### Added
