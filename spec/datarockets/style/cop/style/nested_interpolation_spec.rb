@@ -9,6 +9,14 @@ RSpec.describe Datarockets::Style::Cop::Style::NestedInterpolation do
     expect_no_offenses('"Hello #{user1.name} and #{user2.name}"')
   end
 
+  it "accepts interpolation with or logic" do
+    expect_no_offenses('"\n#{(lines.join("\n").split(node.source).first || \'\')}"')
+  end
+
+  it "accepts interpolation into business block" do
+    expect_no_offenses('"#{assignment.join("\n#{indentation(node)}")}"')
+  end
+
   it 'registers an offense for "Hello, #{user.blank? ? guest : "dear #{user.name}"}"' do
     expect_offense(<<~'RUBY')
       "Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}"
