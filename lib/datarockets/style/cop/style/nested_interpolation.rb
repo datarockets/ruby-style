@@ -18,8 +18,16 @@ module Datarockets
           MSG = "Redundant nested interpolation.".freeze
 
           def on_interpolation(node)
-            node.each_descendant(:begin) do |descendant_node|
-              add_offense(descendant_node)
+            node.each_descendant(:dstr) do |descendant_node|
+              detect_double_interpolation(descendant_node)
+            end
+          end
+
+          private
+
+          def detect_double_interpolation(node)
+            node.each_child_node(:begin) do |begin_node|
+              add_offense(begin_node)
             end
           end
         end

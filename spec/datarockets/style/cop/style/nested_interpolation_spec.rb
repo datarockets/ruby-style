@@ -13,8 +13,11 @@ RSpec.describe Datarockets::Style::Cop::Style::NestedInterpolation do
     expect_no_offenses('"\n#{(lines.join("\n").split(node.source).first || \'\')}"')
   end
 
-  it "accepts interpolation into business block" do
-    expect_no_offenses('"#{assignment.join("\n#{indentation(node)}")}"')
+  it "registers interpolation into business block" do
+    expect_offense(<<~'RUBY')
+      "#{assignment.join("\n#{indentation(node)}")}"
+                            ^^^^^^^^^^^^^^^^^^^^ Redundant nested interpolation.
+    RUBY
   end
 
   it 'registers an offense for "Hello, #{user.blank? ? guest : "dear #{user.name}"}"' do
