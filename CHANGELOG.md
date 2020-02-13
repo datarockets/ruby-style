@@ -7,6 +7,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Added
 
 * Enable `rubocop-rails` cops for rails config. ([@ula][])
+* Add `Style/NestedInterpolation` cop. ([@r.dubrovsky][])
 
 ## 0.7.0 (2020-01-27)
 

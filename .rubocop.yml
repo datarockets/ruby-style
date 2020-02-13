@@ -8,3 +8,8 @@ inherit_mode:
 
 AllCops:
   TargetRubyVersion: 2.3
+
+# for checking cops with interpolation
+Lint/InterpolationCheck:
+  Exclude:
+    - 'spec/**/*.rb'

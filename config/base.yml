@@ -22,7 +22,6 @@ Layout/ArrayAlignmentExtended:
     - with_fixed_indentation
   IndentationWidth: ~
 
-
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: always_ignore
 
@@ -63,6 +62,9 @@ Style/EmptyMethod:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Style/NestedInterpolation:
+  Enabled: true
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
