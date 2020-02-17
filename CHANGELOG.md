@@ -9,6 +9,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Add `Style/NestedInterpolation` cop. ([@r.dubrovsky][])
 
+
+### Changed
+
+* Setup `Style/Documentation` for rails config. ([@r.dubrovsky][])
+
 ## 0.7.0 (2020-01-27)
 
 ### Added

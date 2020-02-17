@@ -13,3 +13,8 @@ AllCops:
     - "Rakefile"
 
 inherit_from: base.yml
+
+Style/Documentation:
+  Enabled: true
+  Exclude:
+    - "app/**/*"
