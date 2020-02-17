@@ -6,12 +6,14 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Added
 
-* Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Add `Style/NestedInterpolation` cop. ([@r.dubrovsky][])
-
 
 ### Changed
 
+* Update rubocop-rspec to `1.38.1`.
+  * Add RSpec/RepeatedExampleGroupBody cop. ([@ula][])
+  * Add RSpec/RepeatedExampleGroupDescription cop. ([@ula][])
+* Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Setup `Style/Documentation` for rails config. ([@r.dubrovsky][])
 
 ## 0.7.0 (2020-01-27)
