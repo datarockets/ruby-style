@@ -76,6 +76,11 @@ There are some areas in which there is no clear consensus in datarockets team re
 In such scenarios, all popular styles are acknowledged and it’s up to you to pick one and apply it consistently.
 For that just set up these cops before starting of usage.
 
+#### RSpec/LetSetup
+
+[This cop](https://rubocop-rspec.readthedocs.io/en/latest/cops_rspec/#rspecletsetup) is enabled by default and we suggest not to use unreferenced `let` variables in your test cases.
+However, if it feels like the cop should be enabled and tests can't be written w/o them, please create an issue with your cases so that we can re-thinking our solution about enabling this cop.
+
 #### Style/StringLiterals
 
 There are two popular styles in the Ruby community, both of which are considered good - single quotes by default and double quotes by default.
