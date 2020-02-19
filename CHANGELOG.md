@@ -15,6 +15,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
   * Add RSpec/RepeatedExampleGroupDescription cop. ([@ula][])
 * Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Setup `Style/Documentation` for rails config. ([@r.dubrovsky][])
+* Setup `Style/ClassAndModuleChildren` cop. ([@r.dubrovsky][])
 
 ## 0.7.0 (2020-01-27)
 
