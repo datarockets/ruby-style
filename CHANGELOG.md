@@ -10,9 +10,14 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop to `0.80.0`. ([@r.dubrovsky][])
+  * Add `Style/HashEachMethods`, `Style/HashTransformKey`, `Style/HashTransformValues` cops
+  * [#7641](https://github.com/rubocop-hq/rubocop/issues/7641): Remove `Style/BracesAroundHashParameters` cop.
+
 * Update rubocop-rspec to `1.38.1`.
   * Add RSpec/RepeatedExampleGroupBody cop. ([@ula][])
   * Add RSpec/RepeatedExampleGroupDescription cop. ([@ula][])
+
 * Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Setup `Style/Documentation` for rails config. ([@r.dubrovsky][])
 * Setup `Style/ClassAndModuleChildren` cop. ([@r.dubrovsky][])

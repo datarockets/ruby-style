@@ -54,14 +54,20 @@ Naming/MemoizedInstanceVariableName:
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
-
 Style/ClassAndModuleChildren:
   EnforcedStyle: nested
 
 Style/EmptyMethod:
   EnforcedStyle: expanded
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/FrozenStringLiteralComment:
   Enabled: false
