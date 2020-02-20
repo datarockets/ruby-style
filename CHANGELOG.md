@@ -21,6 +21,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Enable `rubocop-rails` cops for rails config. ([@ula][])
 * Setup `Style/Documentation` for rails config. ([@r.dubrovsky][])
 * Setup `Style/ClassAndModuleChildren` cop. ([@r.dubrovsky][])
+* Enable `RSpec/LetSetup` cop. ([@r.dubrovsky][])
 
 ## 0.7.0 (2020-01-27)
 
