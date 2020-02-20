@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+## 0.8.0 (2020-02-20)
+
 ### Added
 
 * Add `Style/NestedInterpolation` cop. ([@r.dubrovsky][])
@@ -11,7 +13,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Update rubocop to `0.80.0`. ([@r.dubrovsky][])
-  * Add `Style/HashEachMethods`, `Style/HashTransformKey`, `Style/HashTransformValues` cops
+  * Add `Style/HashEachMethods`, `Style/HashTransformKey`, `Style/HashTransformValues` cops.
   * [#7641](https://github.com/rubocop-hq/rubocop/issues/7641): Remove `Style/BracesAroundHashParameters` cop.
 
 * Update rubocop-rspec to `1.38.1`.
