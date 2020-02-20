@@ -397,18 +397,3 @@ end
   Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends on the project.
   So set up it on the local rubocop config manually.
   <sup>[[link](#style-magic-link)]</sup>
-
-* <a name="style-braces-around-hash-params"></a>
-  Not to use braces around the last hash literal parameter.
-  But requires braces if the second to last parameter is also a hash literal.
-  <sup>[[link](#style-braces-around-hash-params)]</sup>
-
-```ruby
-# bad
-some_method(x, y, {a: 1, b: 2})
-some_method(x, y, {a: 1, b: 2}, a: 1, b: 2)
-
-# good
-some_method(x, y, a: 1, b: 2)
-some_method(x, y, {a: 1, b: 2}, {a: 1, b: 2})
-```
