@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    datarockets-style (0.8.0)
+    datarockets-style (0.8.1)
       rubocop (~> 0.80)
       rubocop-rails (~> 2.4)
       rubocop-rspec (~> 1.38)
@@ -16,7 +16,7 @@ GEM
     jaro_winkler (1.5.4)
     method_source (0.9.2)
     parallel (1.19.1)
-    parser (2.7.0.3)
+    parser (2.7.0.4)
       ast (~> 2.4.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
