@@ -13,9 +13,9 @@ module Datarockets
         class ReportSummary
           attr_reader :offense_list
 
-          FileGroup = Struct.new(:file, :count) do
+          FileGroup = Struct.new(:file, :offenses_count) do
             def print(output)
-              output.puts "    - '#{file}' # #{count}"
+              output.puts "    - '#{file}' # #{offenses_count}"
             end
           end
 

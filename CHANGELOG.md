@@ -4,6 +4,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Update rubocop to '0.82.0'. ([@r.dubrovsky][])
+  * Enable new cops `Lint/RaiseException` and `Lint/StructNewOverride`.
+* Update rubocop-rails to `2.5.2`.
+
 ## 0.8.1 (2020-03-02)
 
 ### Changed
