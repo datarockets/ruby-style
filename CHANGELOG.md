@@ -9,6 +9,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Update rubocop to '0.82.0'. ([@r.dubrovsky][])
   * Enable new cops `Lint/RaiseException` and `Lint/StructNewOverride`.
 * Update rubocop-rails to `2.5.2`.
+* Update `activesupport` for fixing security issues.
 
 ## 0.8.1 (2020-03-02)
 
