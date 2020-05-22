@@ -6,9 +6,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* Update rubocop to '0.82.0'. ([@r.dubrovsky][])
+* **(Breaking)** Drop support for Ruby 2.3. ([@r.dubrovsky][])
+* Update rubocop to '0.84.0'. ([@r.dubrovsky][])
   * Enable new cops `Lint/RaiseException` and `Lint/StructNewOverride`.
 * Update rubocop-rails to `2.5.2`.
+* Update rubocop-rspec to `1.39`.
 * Update `activesupport` for fixing security issues.
 
 ## 0.8.1 (2020-03-02)

@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/datarockets/datarockets-style"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.3.0"
+  spec.required_ruby_version = ">= 2.4.0"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 0.80"
-  spec.add_dependency "rubocop-rails", "~> 2.4"
-  spec.add_dependency "rubocop-rspec", "~> 1.38"
+  spec.add_dependency "rubocop", "~> 0.84"
+  spec.add_dependency "rubocop-rails", "~> 2.5.2"
+  spec.add_dependency "rubocop-rspec", "~> 1.39"
 end
