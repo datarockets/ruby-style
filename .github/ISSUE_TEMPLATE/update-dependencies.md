@@ -14,3 +14,4 @@ To-Do list:
 - [ ] update dependencies to the latest version
 - [ ] investigate how it changes and affect our current styles and cops
 - [ ] check the required ruby version
+- [ ] enable pending cops
