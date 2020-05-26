@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+## 0.9.0 (2020-05-27)
+
 ### Changed
 
 * **(Breaking)** Drop support for Ruby 2.3. ([@r.dubrovsky][])
