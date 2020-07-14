@@ -4,6 +4,13 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Update rubocop to '0.87.1'. ([@r.dubrovsky][])
+  * Enable new cops `Lint/MixedRegexpCaptureTypes`, `Style/RedundantRegexpCharacterClass` and `Style/RedundantRegexpEscape`. Cops were added in version `0.85`.
+  * Enable new cop `Style/RedundantFetchBlock`. Cop was added in version `0.86`.
+  * Enable new cops `Style/AccessorGrouping`, `Style/BisectedAttrAccessor` and `Style/RedundantAssignment`. Cops were added in version `0.87`.
+
 ## 0.9.0 (2020-05-27)
 
 ### Changed
