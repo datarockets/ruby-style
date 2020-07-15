@@ -57,6 +57,9 @@ Layout/SpaceInsideHashLiteralBraces:
 Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
+Lint/DuplicateElsifCondition:
+  Enabled: true
+
 Lint/MixedRegexpCaptureTypes:
   Enabled: true
 
@@ -75,7 +78,13 @@ Naming/RescuedExceptionsVariableName:
 Style/AccessorGrouping:
   Enabled: true
 
+Style/ArrayCoercion:
+  Enabled: true
+
 Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/CaseLikeIf:
   Enabled: true
 
 Style/ClassAndModuleChildren:
@@ -87,8 +96,15 @@ Style/EmptyMethod:
 Style/ExponentialNotation:
   Enabled: true
 
+Style/HashAsLastArrayItem:
+  Enabled: true
+  EnforcedStyle: no_braces
+
 Style/HashEachMethods:
   Enabled: true
+
+Style/HashLikeCase:
+   Enabled: true
 
 Style/HashTransformKeys:
   Enabled: true
@@ -106,6 +122,9 @@ Style/RedundantAssignment:
   Enabled: true
 
 Style/RedundantFetchBlock:
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire:
   Enabled: true
 
 Style/RedundantRegexpCharacterClass:
