@@ -6,12 +6,15 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* Update rubocop to `0.87.1`. ([@r.dubrovsky][])
+* Update rubocop to `0.88.0`. ([@r.dubrovsky][])
   * Enable new cops `Lint/MixedRegexpCaptureTypes`, `Style/RedundantRegexpCharacterClass` and `Style/RedundantRegexpEscape`. Cops were added in version `0.85`.
   * Enable new cop `Style/RedundantFetchBlock`. Cop was added in version `0.86`.
   * Enable new cops `Style/AccessorGrouping`, `Style/BisectedAttrAccessor` and `Style/RedundantAssignment`. Cops were added in version `0.87`.
+  * Enable new cops `Lint/DuplicateElsifCondition`, `Style/ArrayCoercion`, `Style/CaseLikeIf`, `Style/HashAsLastArrayItem`, `Style/HashLikeCase` and `Style/RedundantFileExtensionInRequire`. Cops were added in version `0.88`.
 * Update rubocop-rails to `2.6.0`.
 * Update rubocop-rspec to `1.42.0`.
+
+* Setup `no_braces` rule for `Style/HashAsLastArrayItem` cop which added in the rubocop version `0.88`.
 
 ## 0.9.0 (2020-05-27)
 
