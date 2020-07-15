@@ -6,10 +6,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* Update rubocop to '0.87.1'. ([@r.dubrovsky][])
+* Update rubocop to `0.87.1`. ([@r.dubrovsky][])
   * Enable new cops `Lint/MixedRegexpCaptureTypes`, `Style/RedundantRegexpCharacterClass` and `Style/RedundantRegexpEscape`. Cops were added in version `0.85`.
   * Enable new cop `Style/RedundantFetchBlock`. Cop was added in version `0.86`.
   * Enable new cops `Style/AccessorGrouping`, `Style/BisectedAttrAccessor` and `Style/RedundantAssignment`. Cops were added in version `0.87`.
+* Update rubocop-rails to `2.6.0`.
+* Update rubocop-rspec to `1.42.0`.
 
 ## 0.9.0 (2020-05-27)
 
@@ -17,7 +19,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 * **(Breaking)** Drop support for Ruby 2.3. ([@r.dubrovsky][])
 
-* Update rubocop to '0.84.0'. ([@r.dubrovsky][])
+* Update rubocop to `0.84.0`. ([@r.dubrovsky][])
   * Enable new cops `Lint/RaiseException` and `Lint/StructNewOverride`. Cops were added in version `0.81`.
   * Enable new cops `Layout/SpaceAroundMethodCallOperator` and `Style/ExponentialNotation`. Cops were added in version `0.82`.
   * Enable new cops `Layout/EmptyLinesAroundAttributeAccessor` and `Style/SlicingWithRange`. Cops were added in version `0.83`.
