@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+## 0.10.0 (2020-07-17)
+
 ### Changed
 
 * Update rubocop to `0.88.0`. ([@r.dubrovsky][])
