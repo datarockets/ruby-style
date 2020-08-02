@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master (unreleased)
 
+### Changed
+
+* Update rubocop-rails to `2.7.1`.
+
 ## 0.10.0 (2020-07-17)
 
 ### Changed
