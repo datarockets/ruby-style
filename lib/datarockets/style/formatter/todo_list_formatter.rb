@@ -42,7 +42,8 @@ class TodoListFormatter < RuboCop::Formatter::ProgressFormatter
   def finished(inspected_files)
     report_summary(inspected_files.length,
       @total_offense_count,
-      @total_correction_count)
+      @total_correction_count,
+      @total_correctable_count)
     output.puts
 
     Datarockets::Style::Formatter::TodoListFormatter::ReportSummary.new(offense_list).call(output)
