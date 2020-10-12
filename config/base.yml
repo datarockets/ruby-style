@@ -1,5 +1,8 @@
 require: datarockets/style
 
+AllCops:
+  NewCops: enable
+
 Bundler/DuplicatedGem:
   Enabled: true
 
@@ -88,6 +91,9 @@ Lint/SelfAssignment:
   Enabled: true
 
 Lint/StructNewOverride:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument:
   Enabled: true
 
 Lint/UnreachableLoop:
