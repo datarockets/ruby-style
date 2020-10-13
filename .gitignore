@@ -4,3 +4,5 @@
 /_yardoc/
 /pkg/
 /tmp/
+
+.byebug_history

@@ -1,5 +1,7 @@
 require: rubocop-rails
 
+inherit_from: base.yml
+
 AllCops:
   Exclude:
     - "db/**/*"
@@ -11,8 +13,6 @@ AllCops:
     - "app/views/**/*"
     - "config.ru"
     - "Rakefile"
-
-inherit_from: base.yml
 
 Style/Documentation:
   Enabled: true

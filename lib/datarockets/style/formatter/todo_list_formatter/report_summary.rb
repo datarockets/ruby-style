@@ -27,7 +27,7 @@ module Datarockets
             end
 
             def print(output)
-              output.puts(cop_name + ":")
+              output.puts("#{cop_name}:")
               output.puts("  Exclude:")
               file_groups.sort_by(&:file).each do |file_group|
                 file_group.print(output)

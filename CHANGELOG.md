@@ -6,6 +6,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop to '0.93.1'. ([@r.dubrovsky][])
+  * Enable new cops `Lint/BinaryOperatorWithIdenticalOperands`, `Lint/DuplicateRescueException`, `Lint/EmptyConditionalBody`, `Lint/FloatComparison`, `Lint/MissingSuper
+`, `Lint/OutOfRangeRegexpRef`, `Lint/SelfAssignment`, `Lint/TopLevelReturnWithArgument`, `Lint/UnreachableLoop`, `Style/ExplicitBlockArgument`, `Style/GlobalStdStream`, `Style/OptionalBooleanParameter`, `Style/SingleArgumentDig`, `Style/SoleNestedConditional` and `Style/StringConcatenation` in version `0.89`.
+  * Allow to add all new lints automatically.
+  * Add auto-correctable count notification.
+  * Fix tests
 * Update rubocop-rails to `2.7.1`.
 
 ## 0.10.0 (2020-07-17)
