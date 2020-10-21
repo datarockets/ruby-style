@@ -31,5 +31,8 @@ RSpec/LetSetup:
 RSpec/MessageSpies:
   EnforcedStyle: have_received
 
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 RSpec/NestedGroups:
   Enabled: false
