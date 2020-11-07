@@ -18,7 +18,7 @@ gem push *built_file*
 
 ## Versioning stragety
 
-As versioning stragety, we're using SemVer: `MAJOR.MINOR.PATCH`
+As versioning strategy, we're using SemVer: `MAJOR.MINOR.PATCH`
 
 A `MAJOR` version must be incremented if there are any backward-incompatible breaking changes included in a release. This has the benefit of making it easy for anyone to quickly identify if a new version will work differently than a previous one.
 
