@@ -6,7 +6,9 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
+* Update rubocop to `1.2.0`.
 * Update rubocop-rails to `2.8.1`.
+* Update rubocop-rspec tp `2.0.0`.
 
 ## 0.11.0 (2020-11-07)
 
