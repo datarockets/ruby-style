@@ -6,4 +6,4 @@ gemspec
 
 gem "pry-byebug"
 gem "rake", "~> 13.0"
-gem "rspec", "~> 3.7"
+gem "rspec", "~> 3.10"
