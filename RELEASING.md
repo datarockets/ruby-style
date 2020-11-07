@@ -22,7 +22,7 @@ As versioning stragety, we're using SemVer: `MAJOR.MINOR.PATCH`
 
 A `MAJOR` version must be incremented if there are any backward-incompatible breaking changes included in a release. This has the benefit of making it easy for anyone to quickly identify if a new version will work differently than a previous one.
 
-Usually, we'll incremented it on updating major versions of rubocop dependecies. Ideally, it should be synchronize with major verion of `rubocop`.
+Usually, we'll increment it on updating major versions of rubocop dependencies. Ideally, it should be synchronized with the major verion of `rubocop`.
 
 The `MINOR` version must be incremented if there are backward-compatible functionality is introduced. In the strictest sense, this means you should be able to upgrade to a new minor version without experiencing any breaking changes.
 
