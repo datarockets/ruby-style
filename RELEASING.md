@@ -20,7 +20,7 @@ gem push *built_file*
 
 As versioning stragety, we're using SemVer: `MAJOR.MINOR.PATCH`
 
-A `MAJOR` vesrion must be incremented if there are any backward-incompatible breaking changes included in a release. This has the benefit of making it easy for anyone to quickly identify if a new version will work differently than a previous one.
+A `MAJOR` version must be incremented if there are any backward-incompatible breaking changes included in a release. This has the benefit of making it easy for anyone to quickly identify if a new version will work differently than a previous one.
 
 Usually, we'll incremented it on updating major versions of rubocop dependecies. Ideally, it should be synchronize with major verion of `rubocop`.
 
