@@ -26,7 +26,7 @@ Usually, we'll increment it on updating major versions of rubocop dependencies. 
 
 The `MINOR` version must be incremented if backward-compatible functionality is introduced. In the strictest sense, this means you should be able to upgrade to a new minor version without experiencing any breaking changes.
 
-Usually, we'll incremented it on changing list of cops, updating minor versions of dependencie.
+Usually, we'll increment it on changing the list of cops, updating minor versions of dependencies.
 
 The `PATCH` version is meant for backward-compatible bug fixes. You should expect no new functionality with a new patch version, only improvements.
 
