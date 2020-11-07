@@ -24,7 +24,7 @@ A `MAJOR` version must be incremented if there are any backward-incompatible bre
 
 Usually, we'll increment it on updating major versions of rubocop dependencies. Ideally, it should be synchronized with the major verion of `rubocop`.
 
-The `MINOR` version must be incremented if there are backward-compatible functionality is introduced. In the strictest sense, this means you should be able to upgrade to a new minor version without experiencing any breaking changes.
+The `MINOR` version must be incremented if backward-compatible functionality is introduced. In the strictest sense, this means you should be able to upgrade to a new minor version without experiencing any breaking changes.
 
 Usually, we'll incremented it on changing list of cops, updating minor versions of dependencie.
 
