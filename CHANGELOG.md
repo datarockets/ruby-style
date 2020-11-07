@@ -2,6 +2,12 @@
 
 The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-format).
 
+## master
+
+### Changed
+
+* Update rubocop-rails to `2.8.1`.
+
 ## 0.11.0 (2020-11-07)
 
 ### Changed
