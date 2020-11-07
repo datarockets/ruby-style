@@ -30,4 +30,4 @@ Usually, we'll incremented it on changing list of cops, updating minor versions 
 
 The `PATCH` version is meant for backward-compatible bug fixes. You should expect no new functionality with a new patch version, only improvements.
 
-Usually, we'll use it for updating pathc version of depencies or fixing bugs of the last version. Change rules of cops in most cases should be added to minor version.
+Usually, we'll use it for updating patch versions of dependencies or fixing bugs of the last version. Changed rules of cops in most cases should be added to minor version.
