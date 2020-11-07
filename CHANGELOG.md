@@ -2,7 +2,7 @@
 
 The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-format).
 
-## master (unreleased)
+## 0.11.0 (2020-11-07)
 
 ### Changed
 
