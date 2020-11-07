@@ -13,6 +13,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
   * Add auto-correctable count notification.
   * Fix tests
 * Update rubocop-rails to `2.7.1`.
+* Update rubocop-rspec tp `1.43.2`.
+  * Disable `RSpec/MultipleMemoizedHelpers` cop.
 
 ## 0.10.0 (2020-07-17)
 

@@ -15,6 +15,10 @@ This style guide recommends best practices for writing a clear Rspec tests and e
   So there are not any limits for deep or nested groups.
   <sup>[[link](#rspec-nested-groups)]</sup>
 
+* <a name="rspec-let-count"></a>
+  We're not limiting a number of `let` blocks in describe and context blocks.
+  <sup>[[link](#rspec-let-count)]</sup>
+
 * <a name="rspec-subject"></a>
   Each subject should be named, and we should not use `subject` in our test cases.
   Prefer to use `is_expected` that `expect(subject_name)` for small tests.
