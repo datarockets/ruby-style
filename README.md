@@ -10,14 +10,14 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'datarockets-style'
+  gem 'datarockets-style', '~> 1.0.0'
 end
 ```
 
 Or, for a Ruby library, add this to your gemspec:
 
 ```ruby
-spec.add_development_dependency 'datarockets-style'
+spec.add_development_dependency 'datarockets-style', '~> 1.0.0'
 ```
 
 And then execute:
