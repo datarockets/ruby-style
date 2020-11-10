@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+### Changed
+
+* Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
+
 ## 1.0.0 (2020-11-10)
 
 ### Changed

@@ -392,6 +392,35 @@ def foo
 end
 ```
 
+* <a name="style-trailing-comma-in-hash-literal"></a>
+  Requires a comma after the last item of all non-empty, multiline hash literals.
+  <sup>[[link](#style-trailing-comma-in-hash-literal)]</sup>
+
+```ruby
+# bad
+a = { foo: 1, bar: 2, }
+
+# good
+a = { foo: 1, bar: 2 }
+
+# good
+a = {
+  foo: 1, bar: 2, qux: 3,
+}
+
+# bad
+a = {
+  foo: 1,
+  bar: 2
+}
+
+# good
+a = {
+  foo: 1,
+  bar: 2,
+}
+```
+
 * <a name="style-magic-link"></a>
   There are not any required rules for `frozen_string_literal` magic url.
   Set up [this cop](https://rubocop.readthedocs.io/en/latest/cops_style/#stylefrozenstringliteralcomment) depends on the project.
