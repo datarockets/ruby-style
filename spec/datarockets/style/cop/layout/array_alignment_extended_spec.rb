@@ -6,10 +6,10 @@ RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended, skip: tr
   let(:config) do
     RuboCop::Config.new(
       "Layout/ArrayAlignmentExtended" => {
-        "EnforcedStyle" => cop_enforced_style
+        "EnforcedStyle" => cop_enforced_style,
       },
       "Layout/IndentationWidth" => {
-        "Width" => 2
+        "Width" => 2,
       }
     )
   end
