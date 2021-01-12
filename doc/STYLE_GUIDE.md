@@ -393,7 +393,7 @@ end
 ```
 
 * <a name="style-trailing-comma-in-hash-literal"></a>
-  Requires a comma after the last item of all non-empty, multiline hash literals.
+  Requires a comma after the last item in a hash.
   <sup>[[link](#style-trailing-comma-in-hash-literal)]</sup>
 
 ```ruby
@@ -403,15 +403,26 @@ a = { foo: 1, bar: 2, }
 # good
 a = { foo: 1, bar: 2 }
 
+# bad
+a = {
+  foo: 1, bar: 2,
+  qux: 3,
+}
+
 # good
 a = {
-  foo: 1, bar: 2, qux: 3,
+  foo: 1, bar: 2,
+  qux: 3
 }
 
 # bad
 a = {
-  foo: 1,
-  bar: 2
+  foo: 1, bar: 2, qux: 3,
+}
+
+# good
+a = {
+  foo: 1, bar: 2, qux: 3
 }
 
 # good
