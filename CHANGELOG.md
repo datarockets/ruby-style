@@ -4,9 +4,17 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+## 1.0.1 (2021-02-04)
+
+### Added
+
+* Add ```.idea``` to .gitignore ([@paydaylight](https://github.com/paydaylight))
+
 ### Changed
 
 * Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
+* Update rubocop to ```1.9.1``` ([@paydaylight](https://github.com/paydaylight))
+* Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0``` ([@paydaylight](https://github.com/paydaylight))
 
 ## 1.0.0 (2020-11-10)
 
