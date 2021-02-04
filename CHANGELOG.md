@@ -4,7 +4,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
-## 1.0.1 (2021-02-04)
+## 1.1.0 (2021-02-04)
 
 ### Added
 
