@@ -47,7 +47,7 @@ module DatarocketsStyle
 
         def offense_groups
           @_offense_groups ||= offense_list.group_by(&:cop_name)
-                                 .map { |cop_name, offenses| OffenseGroup.new(cop_name, offenses) }
+            .map { |cop_name, offenses| OffenseGroup.new(cop_name, offenses) }
         end
       end
     end
