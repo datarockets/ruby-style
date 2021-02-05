@@ -13,8 +13,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
-* Update rubocop to ```1.9.1``` ([@m.sangerbayev][])
-* Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0``` ([@m.sangerbayev][])
+* Update rubocop to ```1.9.1```. ([@m.sangerbayev][])
+* Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0```. ([@m.sangerbayev][])
 
 ## 1.0.0 (2020-11-10)
 
