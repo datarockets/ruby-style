@@ -8,7 +8,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Added
 
-* Add ```.idea``` to .gitignore ([@m.sangerbayev][])
+* Add `.idea` to `.gitignore`. ([@m.sangerbayev][])
 
 ### Changed
 
