@@ -4,11 +4,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
-## Added
+### Added
 
 * [#219](https://github.com/datarockets/datarockets-style/issues/219) Add `RSpec/PreferBeforeOverSetup` cop. ([@paydaylight](https://github.com/paydaylight))
 
-## Changed
+### Changed
 
 * Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@paydaylight](https://github.com/paydaylight))
 
