@@ -46,6 +46,6 @@ class TodoListFormatter < RuboCop::Formatter::ProgressFormatter
       @total_correctable_count)
     output.puts
 
-    Datarockets::Style::Formatter::TodoListFormatter::ReportSummary.new(offense_list).call(output)
+    DatarocketsStyle::Formatter::TodoListFormatter::ReportSummary.new(offense_list).call(output)
   end
 end
