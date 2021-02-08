@@ -50,6 +50,9 @@ Layout/FirstHashElementIndentation:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
 
