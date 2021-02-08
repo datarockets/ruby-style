@@ -1,4 +1,4 @@
-RSpec.describe Datarockets::Style::Formatter::TodoListFormatter::ReportSummary do
+RSpec.describe DatarocketsStyle::Formatter::TodoListFormatter::ReportSummary do
   subject(:report_offenses) { described_class.new(offense_list).call(output) }
 
   let(:output) { StringIO.new }

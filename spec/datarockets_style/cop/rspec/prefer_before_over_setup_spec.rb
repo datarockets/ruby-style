@@ -1,4 +1,4 @@
-RSpec.describe Datarockets::Style::Cop::RSpec::PreferBeforeOverSetup do
+RSpec.describe DatarocketsStyle::Cop::RSpec::PreferBeforeOverSetup do
   subject(:cop) { described_class.new }
 
   context "when using `do ... end` block syntax" do

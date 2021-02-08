@@ -1,4 +1,4 @@
-require: datarockets/style
+require: datarockets_style
 
 AllCops:
   NewCops: enable
@@ -48,6 +48,9 @@ Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
 Layout/SpaceAroundMethodCallOperator:

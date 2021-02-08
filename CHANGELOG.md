@@ -4,7 +4,17 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
-* Add `RSpec/PreferBeforeOverSetup` cop. ([@paydaylight](https://github.com/paydaylight))
+## Added
+
+* [#219](https://github.com/datarockets/datarockets-style/issues/219) Add `RSpec/PreferBeforeOverSetup` cop. ([@paydaylight](https://github.com/paydaylight))
+
+## Changed
+
+* Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@paydaylight](https://github.com/paydaylight))
+
+### Fixed
+
+* [#177](https://github.com/datarockets/datarockets-style/issues/177) set ```Layout/MultilineOperationIndentation``` to indented ([@paydaylight](https://github.com/paydaylight))
 
 ## 1.0.1 (2021-02-04)
 

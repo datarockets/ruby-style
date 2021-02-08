@@ -1,4 +1,4 @@
-RSpec.describe Datarockets::Style::Cop::Style::NestedInterpolation do
+RSpec.describe DatarocketsStyle::Cop::Style::NestedInterpolation do
   subject(:cop) { described_class.new }
 
   it "accepts single interpolation" do

@@ -1,10 +1,10 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "datarockets/style/version"
+require "datarockets_style/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "datarockets-style"
-  spec.version       = Datarockets::Style::VERSION
+  spec.version       = DatarocketsStyle::VERSION
   spec.authors       = ["Roman Dubrovsky"]
   spec.email         = ["r.dubrovsky@datarockets.com"]
 
