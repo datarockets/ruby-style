@@ -1,4 +1,4 @@
-require "datarockets/style"
+require "datarockets_style"
 require "rubocop/rspec/support"
 require "pry"
 

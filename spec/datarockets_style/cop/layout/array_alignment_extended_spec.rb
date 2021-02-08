@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Datarockets::Style::Cop::Layout::ArrayAlignmentExtended, skip: true do
+RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended, skip: true do
   subject(:cop) { described_class.new(config) }
 
   let(:config) do

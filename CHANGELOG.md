@@ -15,6 +15,11 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
 * Update rubocop to ```1.9.1```. ([@m.sangerbayev][])
 * Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0```. ([@m.sangerbayev][])
+* Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@m.sangerbayev][])
+
+### Fixed
+
+* [#177](https://github.com/datarockets/datarockets-style/issues/177) set ```Layout/MultilineOperationIndentation``` to indented ([@m.sangerbayev][])
 
 ## 1.0.0 (2020-11-10)
 
