@@ -24,7 +24,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * Update rubocop to ```1.9.1``` ([@paydaylight](https://github.com/paydaylight))
 * Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0``` ([@paydaylight](https://github.com/paydaylight))
 * Update rubocop-rspec to `2.2.0`. ([@paydaylight](https://github.com/paydaylight))
-* [Fix #124](https://github.com/datarockets/datarockets-style/issues/124) Move gem dependencies to `./datarockets-style.gemspec` and drop `Gemfile.lock` tracking. ([@paydaylight](https://github.com/paydaylight))
+* [#124](https://github.com/datarockets/datarockets-style/issues/124) Move gem dependencies to `./datarockets-style.gemspec` and drop `Gemfile.lock` tracking. ([@paydaylight](https://github.com/paydaylight))
 
 ## 1.0.0 (2020-11-10)
 
