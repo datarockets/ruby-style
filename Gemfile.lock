@@ -2,6 +2,9 @@ PATH
   remote: .
   specs:
     datarockets-style (1.0.0)
+      pry-byebug
+      rake (~> 13.0)
+      rspec (~> 3.10)
       rubocop (>= 1.2, < 2.0)
       rubocop-rails (>= 2.8.0, < 2.10.0)
       rubocop-rspec (~> 2.0)
@@ -79,9 +82,6 @@ PLATFORMS
 
 DEPENDENCIES
   datarockets-style!
-  pry-byebug
-  rake (~> 13.0)
-  rspec (~> 3.10)
 
 BUNDLED WITH
    2.1.4
