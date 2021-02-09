@@ -7,6 +7,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ## Changed
 
 * Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@paydaylight](https://github.com/paydaylight))
+* Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight](https://github.com/paydaylight))
 
 ### Fixed
 
