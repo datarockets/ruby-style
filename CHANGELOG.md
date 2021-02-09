@@ -13,9 +13,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
-* Update rubocop to ```1.9.1```. ([@m.sangerbayev][])
-* Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0```. ([@m.sangerbayev][])
-* Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@m.sangerbayev][])
+* Update rubocop to `1.9.1`. ([@m.sangerbayev][])
+* Update rubocop-rails requirement to `>= 2.8.0, < 2.10.0`. ([@m.sangerbayev][])
+* Change `Datarockets::Style` module to `DatarocketsStyle`. ([@m.sangerbayev][])
+* Update rubocop-rspec to `2.2.0`. ([@m.sangerbayev][])
 
 ### Fixed
 
