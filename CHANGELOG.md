@@ -4,7 +4,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
-## Changed
+## 1.1.0 (2021-02-09)
 
 * [#233](https://github.com/datarockets/datarockets-style/issues/233) Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight][])
 
@@ -225,3 +225,4 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 [@v.kuzmik]: https://github.com/TheBlackArroVV/
 [@a.branzeanu]: https://github.com/texpert
 [@nikitasakov]: https://github.com/nikitasakov
+[@paydaylight]: https://github.com/paydaylight
