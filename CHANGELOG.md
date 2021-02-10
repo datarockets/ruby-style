@@ -6,24 +6,21 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## Changed
 
-* Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@paydaylight](https://github.com/paydaylight))
 * [#233](https://github.com/datarockets/datarockets-style/issues/233) Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight][])
 
-### Fixed
-
-* [#177](https://github.com/datarockets/datarockets-style/issues/177) set ```Layout/MultilineOperationIndentation``` to indented ([@paydaylight](https://github.com/paydaylight))
-
-## 1.0.1 (2021-02-04)
-
-### Added
-
-* Add ```.idea``` to .gitignore ([@paydaylight](https://github.com/paydaylight))
+## 1.1.0 (2021-02-09)
 
 ### Changed
 
 * Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInHashLiteral` rule. ([@r.dubrovsky][])
-* Update rubocop to ```1.9.1``` ([@paydaylight](https://github.com/paydaylight))
-* Update rubocop-rails requirement to ```>= 2.8.0, < 2.10.0``` ([@paydaylight](https://github.com/paydaylight))
+* Update rubocop to `1.9.1`. ([@paydaylight][])
+* Update rubocop-rails requirement to `>= 2.8.0, < 2.10.0`. ([@paydaylight][])
+* Update rubocop-rspec to `2.2.0`. ([@paydaylight][])
+* Change `Datarockets::Style` module to `DatarocketsStyle`. ([@paydaylight][])
+
+### Fixed
+
+* [#177](https://github.com/datarockets/datarockets-style/issues/177) set `Layout/MultilineOperationIndentation` to indented ([@paydaylight][])
 
 ## 1.0.0 (2020-11-10)
 
