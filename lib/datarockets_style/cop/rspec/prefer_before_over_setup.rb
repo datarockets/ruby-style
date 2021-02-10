@@ -4,9 +4,9 @@ module DatarocketsStyle
   module Cop
     module RSpec
       # Checks that tests use `before` instead of RoR unit-test `setup` method (part of `rspec-rails` gem)
-      # 
+      #
       # bad
-      # 
+      #
       # setup do
       #   allow(post).to receive(:publish!)
       # end
