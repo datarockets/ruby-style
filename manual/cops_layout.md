@@ -52,6 +52,30 @@ Name | Default value | Configurable values
 EnforcedStyle | `with_first_parameter` | `with_first_parameter`, `with_fixed_indentation`
 IndentationWidth | `<none>` | Integer
 
+# RSpec
+
+## RSpec/PreferBeforeOverSetup
+
+Enabled by default | Safe | Supports autocorrection | VersionAdded | VersionChanged
+--- | --- | --- | --- | ---
+Enabled | Yes | Yes | 1.2.0 | -
+
+Checks that tests use `before` instead of RoR unit-test `setup` method (part of `rspec-rails` gem)
+
+### Example
+
+```ruby
+# bad
+setup do
+  allow(post).to receive(:publish!)
+end
+
+# good
+before do
+  allow(post).to receive(:publish!)
+end
+```
+
 # Style
 
 ## Style/NestedInterpolation
