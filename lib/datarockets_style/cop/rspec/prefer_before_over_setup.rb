@@ -17,7 +17,7 @@ module DatarocketsStyle
       #   allow(post).to receive(:publish!)
       # end
       class PreferBeforeOverSetup < RuboCop::Cop::Cop
-        MSG = "Prefer `before` instead of `setup`."
+        MSG = "Use `before` instead of `setup`."
 
         def_node_matcher :setup_call?, <<-PATTERN
           (block
