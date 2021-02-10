@@ -7,7 +7,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ## Changed
 
 * Change ```Datarockets::Style``` module to ```DatarocketsStyle``` ([@paydaylight](https://github.com/paydaylight))
-* [#233](https://github.com/datarockets/datarockets-style/issues/233) Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight](https://github.com/paydaylight))
+* [#233](https://github.com/datarockets/datarockets-style/issues/233) Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight][])
 
 ### Fixed
 
@@ -228,4 +228,3 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 [@v.kuzmik]: https://github.com/TheBlackArroVV/
 [@a.branzeanu]: https://github.com/texpert
 [@nikitasakov]: https://github.com/nikitasakov
-
