@@ -16,7 +16,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Fixed
 
-* [#177](https://github.com/datarockets/datarockets-style/issues/177) set ```Layout/MultilineOperationIndentation``` to indented ([@paydaylight][])
+* [#177](https://github.com/datarockets/datarockets-style/issues/177) set `Layout/MultilineOperationIndentation` to indented ([@paydaylight][])
 
 ## 1.0.0 (2020-11-10)
 
