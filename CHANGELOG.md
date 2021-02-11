@@ -4,6 +4,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+### Added
+
+* [#219](https://github.com/datarockets/datarockets-style/issues/219) Add `RSpec/PreferBeforeOverSetup` cop. ([@paydaylight][])
+
 ## 1.1.0 (2021-02-09)
 
 ### Changed

@@ -186,3 +186,19 @@ it "returns the last widget" do
   expect(Widget.last).to eq my_widget
 end
 ```
+
+* <a name="rspec-prefer-before"></a>
+  Prefer using `before` instead of `setup`.
+  <sup>[[link](#rspec-prefer-before)]</sup>
+
+```ruby
+# bad
+setup do
+  allow(post).to receive(:publish!)
+end
+
+# good
+before do
+  allow(post).to receive(:publish!)
+end
+```
