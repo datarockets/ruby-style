@@ -25,7 +25,7 @@ Layout/ArrayAlignmentExtended:
     - with_fixed_indentation
   IndentationWidth: ~
 
-Layout/BlockAlignmentInHash:
+Layout/BlockItemsIndentationInHash:
   Enabled: true
 
 Layout/HashAlignment:
