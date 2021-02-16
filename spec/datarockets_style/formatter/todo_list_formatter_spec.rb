@@ -52,7 +52,7 @@ RSpec.describe TodoListFormatter do
               Parser::Source::Range.new(source_buffer, 0, 1),
               "message",
               cop_name,
-              corrected_cops.include?(cop_name) ? :corrected : :uncorrected
+              corrected_cops.include?(cop_name) ? :corrected : :uncorrected,
             )
           end
           formatter.file_finished(file, offenses)

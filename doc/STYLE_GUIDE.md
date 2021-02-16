@@ -392,6 +392,86 @@ def foo
 end
 ```
 
+* <a name="style-trailing-comma-in-arguments"></a>
+  Requires a comma after the last argument, but only for parenthesized method calls where each argument is on its own line.
+  <sup>[[link](#style-trailing-comma-in-arguments)]</sup>
+
+```ruby
+# bad
+method(1, 2,)
+
+# good
+method(1, 2)
+
+# bad
+method(
+  1, 2,
+  3,
+)
+
+# good
+method(
+  1, 2,
+  3
+)
+
+# bad
+method(
+  1, 2, 3,
+)
+
+# good
+method(
+  1, 2, 3
+)
+
+# good
+method(
+  1,
+  2,
+)
+```
+
+* <a name="style-trailing-comma-in-array-literals"></a>
+  Requires a comma after last item in an array, but only when each item is on its own line.
+  <sup>[[link](#style-trailing-comma-in-array-literals)]</sup>
+
+```ruby
+# bad
+a = [1, 2,]
+
+# good
+a = [1, 2]
+
+# bad
+a = [
+  1, 2,
+  3,
+]
+
+# good
+a = [
+  1, 2,
+  3
+]
+
+# bad
+a = [
+  1, 2, 3,
+]
+
+# good
+a = [
+  1, 2, 3
+]
+
+# good
+a = [
+  1,
+  2,
+]
+```
+
 * <a name="style-trailing-comma-in-hash-literal"></a>
   Requires a comma after the last item in a hash.
   <sup>[[link](#style-trailing-comma-in-hash-literal)]</sup>

@@ -10,7 +10,7 @@ RSpec.describe DatarocketsStyle::Formatter::TodoListFormatter::ReportSummary do
       TodoListFormatter::FileOffence.new("test1.rb", "CopC"),
       TodoListFormatter::FileOffence.new("test2.rb", "CopA"),
       TodoListFormatter::FileOffence.new("test3.rb", "CopB"),
-      TodoListFormatter::FileOffence.new("test3.rb", "CopB")
+      TodoListFormatter::FileOffence.new("test3.rb", "CopB"),
     ].shuffle
   end
 

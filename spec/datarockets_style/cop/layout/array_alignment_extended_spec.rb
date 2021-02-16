@@ -10,7 +10,7 @@ RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended, skip: true
       },
       "Layout/IndentationWidth" => {
         "Width" => 2,
-      }
+      },
     )
   end
 
