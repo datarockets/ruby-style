@@ -11,6 +11,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 ### Changed
 
 * [#233](https://github.com/datarockets/datarockets-style/issues/233) Setup `EnforcedStyleForMultiline` for `Style/TrailingCommaInArguments` and `Style/TrailingCommaInArrayLiteral` rules. ([@paydaylight][])
+* [#124](https://github.com/datarockets/datarockets-style/issues/124) Move gem dependencies to `./datarockets-style.gemspec` and drop `Gemfile.lock` tracking. ([@paydaylight][])
 
 ## 1.1.0 (2021-02-09)
 

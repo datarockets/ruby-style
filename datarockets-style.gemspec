@@ -33,4 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop", ">= 1.2  ", "< 2.0"
   spec.add_dependency "rubocop-rails", ">= 2.8.0", "< 2.10.0"
   spec.add_dependency "rubocop-rspec", "~> 2.0"
+
+  spec.add_development_dependency "pry-byebug"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.10"
 end
