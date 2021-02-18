@@ -41,6 +41,14 @@ module DatarocketsStyle
           )
         PATTERN
 
+        # def on_kwbegin(node)
+        #   # Check indentation against end keyword but only if it's first on its
+        #   # line.
+        #   return unless begins_its_line?(node.loc.end)
+        #
+        #   check_alignment(node.children, node.loc.column)
+        # end
+
         def on_hash(node)
           return unless hash_with_block?(node)
 
