@@ -10,14 +10,14 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'datarockets-style', '~> 1.0.0'
+  gem 'datarockets-style', '~> 1.1.0'
 end
 ```
 
 Or, for a Ruby library, add this to your gemspec:
 
 ```ruby
-spec.add_development_dependency 'datarockets-style', '~> 1.0.0'
+spec.add_development_dependency 'datarockets-style', '~> 1.1.0'
 ```
 
 And then execute:
@@ -108,28 +108,28 @@ Result of the formatter is compatible with rubocop config or rubocop todo file.
 For running that cop, just print in your command like
 
 ```bash
-$ bundle exec rubocop -f TodoListFormatter -r datarockets/style
+$ bundle exec rubocop -f TodoListFormatter -r datarockets_style
 Inspecting 10 files
 ...CC.CC..
 10 files inspected, 7 offenses detected
 
 Layout/IndentationConsistency:
   Exclude:
-    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 1
+    - 'spec/datarockets_style/formatter/todo_list_formatter_spec.rb' # 1
 
 Naming/MemoizedInstanceVariableName:
   Exclude:
-    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter/report_summary.rb' # 1
 
 RSpec/ExampleLength:
   Exclude:
-    - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
-    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
+    - 'spec/datarockets_style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
+    - 'spec/datarockets_style/formatter/todo_list_formatter_spec.rb' # 2
 
 Style/Documentation:
   Exclude:
-    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
-    - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter.rb' # 1
 ```
 
 #### Autocorrection
@@ -137,24 +137,24 @@ Style/Documentation:
 If you run the formatter with autocorrection options, the formatter skip corrected cop and does not include it to the result.
 
 ```bash
-$ bundle exec rubocop -f TodoListFormatter -r datarockets/style -a
+$ bundle exec rubocop -f TodoListFormatter -r datarockets_style -a
 Inspecting 10 files
 ...CC.CC..
 10 files inspected, 7 offenses detected, 1 offenses corrected
 
 Naming/MemoizedInstanceVariableName:
   Exclude:
-    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter/report_summary.rb' # 1
 
 RSpec/ExampleLength:
   Exclude:
-    - 'spec/datarockets/style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
-    - 'spec/datarockets/style/formatter/todo_list_formatter_spec.rb' # 2
+    - 'spec/datarockets_style/formatter/todo_list_formatter/report_summary_spec.rb' # 1
+    - 'spec/datarockets_style/formatter/todo_list_formatter_spec.rb' # 2
 
 Style/Documentation:
   Exclude:
-    - 'lib/datarockets/style/formatter/todo_list_formatter/report_summary.rb' # 1
-    - 'lib/datarockets/style/formatter/todo_list_formatter.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter/report_summary.rb' # 1
+    - 'lib/datarockets_style/formatter/todo_list_formatter.rb' # 1
 ```
 
 ## Non-goals of RuboCop
@@ -178,4 +178,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Datarockets::Style project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](CODE_OF_CONDUCT.md).
+Everyone interacting in the DatarocketsStyle project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](CODE_OF_CONDUCT.md).
