@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop", "~> 1.10"
-  spec.add_dependency "rubocop-rails", ">= 2.8.0", "< 2.10.0"
+  spec.add_dependency "rubocop-rails", "~> 2.9"
   spec.add_dependency "rubocop-rspec", "~> 2.0"
 
   spec.add_development_dependency "pry-byebug"
