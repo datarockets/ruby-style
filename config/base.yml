@@ -25,6 +25,9 @@ Layout/ArrayAlignmentExtended:
     - with_fixed_indentation
   IndentationWidth: ~
 
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: always_ignore
 

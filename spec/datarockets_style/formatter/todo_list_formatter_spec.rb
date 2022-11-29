@@ -18,7 +18,7 @@ RSpec.describe TodoListFormatter do
         <<~OUTPUT
           Inspecting 3 files
           RRR
-          3 files inspected, 11 offenses detected, 11 offenses auto-correctable
+          3 files inspected, 11 offenses detected, 11 offenses autocorrectable
 
           CopA:
             Exclude:
@@ -71,7 +71,7 @@ RSpec.describe TodoListFormatter do
           <<~OUTPUT
             Inspecting 3 files
             RRR
-            3 files inspected, 11 offenses detected, 4 offenses corrected, 7 offenses auto-correctable
+            3 files inspected, 11 offenses detected, 4 offenses corrected, 7 offenses autocorrectable
 
             CopB:
               Exclude:

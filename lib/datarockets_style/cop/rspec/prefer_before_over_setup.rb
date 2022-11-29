@@ -34,7 +34,7 @@ module DatarocketsStyle
         def autocorrect(node)
           lambda do |corrector|
             block_internals = node.source.split(/ /)
-            corrector.replace node.loc.expression, ["before", *block_internals[1..-1]].join(" ")
+            corrector.replace node.loc.expression, ["before", *block_internals[1..]].join(" ")
           end
         end
       end
