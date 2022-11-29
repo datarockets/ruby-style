@@ -16,6 +16,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
   * Setup `Layout/CaseIndentation` rule. ([@r.dubrovsky][])
 * [#261](https://github.com/datarockets/ruby-style/issues/261) Update rubocop-rails to `2.17.3`. ([@r.dubrovsky][])
 * [#262](https://github.com/datarockets/ruby-style/issues/262) Update rubocop-rspec to `2.15`. ([@r.dubrovsky][])
+* [#32](https://github.com/datarockets/ruby-style/issues/32) Enable back `Style/FrozenStringLiteralComment` cop. ([@r.dubrovsky][])
 
 ## 1.2.0
 

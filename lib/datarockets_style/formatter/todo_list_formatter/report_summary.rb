@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module DatarocketsStyle
   module Formatter
     module TodoListFormatter

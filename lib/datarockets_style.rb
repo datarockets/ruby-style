@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "rubocop"
 require "datarockets_style/formatter/todo_list_formatter"
 

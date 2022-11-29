@@ -155,7 +155,7 @@ Style/HashTransformValues:
   Enabled: true
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 
 Style/NestedInterpolation:
   Enabled: true

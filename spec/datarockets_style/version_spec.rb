@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe "DatarocketsStyle::Version" do
   describe "::VERSION" do
     it "contains the current version" do
