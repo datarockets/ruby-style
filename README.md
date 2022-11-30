@@ -51,6 +51,15 @@ inherit_gem:
     - config/rails.yml
 ```
 
+By default, it doesn't include rules for I18n. For enabling them, add the next styles
+
+```yaml
+inherit_gem:
+  datarockets-style:
+    - config/rails.yml
+    - config/rails-locales.yml
+```
+
 ### Rspec config
 
 For Rspec tests, you can add a special rubocop config
