@@ -18,6 +18,10 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * [#262](https://github.com/datarockets/ruby-style/issues/262) Update rubocop-rspec to `2.15`. ([@r.dubrovsky][])
 * [#32](https://github.com/datarockets/ruby-style/issues/32) Enable back `Style/FrozenStringLiteralComment` cop. ([@r.dubrovsky][])
 
+### Fixed
+
+* [#196](https://github.com/datarockets/ruby-style/issues/196) Fix `Layout/ArrayAlignmentExtended` cop. ([@r.dubrovsky][])
+
 ## 1.2.0
 
 ### Added
