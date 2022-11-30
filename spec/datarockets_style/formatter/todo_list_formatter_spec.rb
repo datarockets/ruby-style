@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TodoListFormatter do
   subject(:formatter) { described_class.new(output) }
 

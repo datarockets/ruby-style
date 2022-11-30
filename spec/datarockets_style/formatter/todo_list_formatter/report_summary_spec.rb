@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe DatarocketsStyle::Formatter::TodoListFormatter::ReportSummary do
   subject(:report_offenses) { described_class.new(offense_list).call(output) }
 

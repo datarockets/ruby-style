@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module DatarocketsStyle
   module Cop
     module Style
@@ -14,7 +16,7 @@ module DatarocketsStyle
       class NestedInterpolation < RuboCop::Cop::Cop
         include RuboCop::Cop::Interpolation
 
-        MSG = "Redundant nested interpolation.".freeze
+        MSG = "Redundant nested interpolation."
 
         def on_interpolation(node)
           node.each_descendant(:dstr) do |descendant_node|

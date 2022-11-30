@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "datarockets_style"
 require "rubocop/rspec/support"
 require "pry"
