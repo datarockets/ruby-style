@@ -2,6 +2,15 @@
 
 module RubocopExamples
   class HashStyles
+    def initialize
+      # issue: https://github.com/datarockets/ruby-style/issues/179
+      @test = {
+        test: lambda do |i|
+          i
+        end,
+      }
+    end
+
     # issue: https://github.com/datarockets/ruby-style/issues/176
     def test1
       MemberResponse.create!({
