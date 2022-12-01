@@ -28,6 +28,9 @@ Layout/ArrayAlignmentExtended:
 Layout/CaseIndentation:
   EnforcedStyle: end
 
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
 Layout/HashAlignment:
   EnforcedColonStyle: key
   EnforcedHashRocketStyle: key
