@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended, skip: true do
+RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended do
   subject(:cop) { described_class.new(config) }
 
   let(:config) do
@@ -73,8 +73,8 @@ RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended, skip: true
         <<~RUBY
           [:l1,
            [:l2,
-             [:l3,
-              [:l4]]]]
+            [:l3,
+             [:l4]]]]
         RUBY
       end
 
@@ -247,8 +247,8 @@ RSpec.describe DatarocketsStyle::Cop::Layout::ArrayAlignmentExtended, skip: true
         <<~RUBY
           [:l1,
             [:l2,
-               [:l3,
-                 [:l4]]]]
+              [:l3,
+                [:l4]]]]
         RUBY
       end
 

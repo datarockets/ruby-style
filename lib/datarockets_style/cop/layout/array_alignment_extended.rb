@@ -33,8 +33,9 @@ module DatarocketsStyle
       #
       #   array = [1, 2, 3,
       #            4, 5, 6]
-      class ArrayAlignmentExtended < RuboCop::Cop::Cop
+      class ArrayAlignmentExtended < RuboCop::Cop::Base
         include RuboCop::Cop::Alignment
+        extend RuboCop::Cop::AutoCorrector
 
         ALIGN_PARAMS_MSG = "Align the elements of an array literal if they span more than one line."
 
@@ -47,8 +48,8 @@ module DatarocketsStyle
           check_alignment(node.children, base_column(node, node.children))
         end
 
-        def autocorrect(node)
-          RuboCop::Cop::AlignmentCorrector.correct(processed_source, node, column_delta)
+        def autocorrect(corrector, node)
+          RuboCop::Cop::AlignmentCorrector.correct(corrector, processed_source, node, column_delta)
         end
 
         private
