@@ -29,7 +29,8 @@ Layout/CaseIndentation:
   EnforcedStyle: end
 
 Layout/HashAlignment:
-  EnforcedLastArgumentHashStyle: always_ignore
+  EnforcedColonStyle: key
+  EnforcedHashRocketStyle: key
 
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
