@@ -40,7 +40,7 @@ module DatarocketsStyle
         ALIGN_PARAMS_MSG = "Align the elements of an array literal if they span more than one line."
 
         FIXED_INDENT_MSG = "Use one level of indentation for elements " \
-                           "following the first line of a multi-line array."
+          "following the first line of a multi-line array."
 
         def on_array(node)
           return if node.children.size < 2

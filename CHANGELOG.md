@@ -18,6 +18,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * [#262](https://github.com/datarockets/ruby-style/issues/262) Update rubocop-rspec to `2.15`. ([@r.dubrovsky][])
 * [#32](https://github.com/datarockets/ruby-style/issues/32) Enable back `Style/FrozenStringLiteralComment` cop. ([@r.dubrovsky][])
 * [#176](https://github.com/datarockets/ruby-style/issues/176) Fix hash alignment via changing `Layout/HashAlignment` cop. ([@r.dubrovsky][])
+* [#263](https://github.com/datarockets/ruby-style/issues/263) Setup `EnforcedStyle` for `Layout/LineEndStringConcatenationIndentation` cop. ([@r.dubrovsky][])
 * [#258](https://github.com/datarockets/ruby-style/issues/258) Setup `EnforcedStyle` for `Layout/FirstArrayElementIndentation` cop. ([@r.dubrovsky][])
 * [#179](https://github.com/datarockets/ruby-style/issues/179) Setup `EnforcedStyleAlignWith` rule for `Layout/BlockAlignment` cop. ([@r.dubrovsky][])
 

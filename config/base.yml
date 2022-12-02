@@ -51,6 +51,9 @@ Layout/EndAlignment:
 Layout/IndentationConsistency:
   EnforcedStyle: normal
 
+Layout/LineEndStringConcatenationIndentation:
+  EnforcedStyle: indented
+
 Layout/LineLength:
   Max: 120
 
