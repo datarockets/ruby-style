@@ -4,6 +4,8 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+## 1.3.0 (2022-12-02)
+
 ### Added
 
 * [#261](https://github.com/datarockets/ruby-style/issues/261) Add new config `rails-locales`. ([@r.dubrovsky][])
@@ -27,7 +29,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 * [#196](https://github.com/datarockets/ruby-style/issues/196) Fix `Layout/ArrayAlignmentExtended` cop. ([@r.dubrovsky][])
 * [#258](https://github.com/datarockets/ruby-style/issues/258) Fix conflict between `Layout/ArrayAlignmentExtended` and `Layout/FirstArrayElementIndentation` cops. ([@r.dubrovsky][])
 
-## 1.2.0
+## 1.2.0 (2021-02-24)
 
 ### Added
 

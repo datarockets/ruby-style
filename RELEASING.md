@@ -1,8 +1,8 @@
 # Releasing
 
 * Update `version.rb` file accordingly.
+* Update `README.mb` file.
 * Update `CHANGELOG.md` file.
-* Update `Gemfile.lock` file via running `bundle install`.
 * Build and publish (and verify that everything ok):
 
 ```bash
