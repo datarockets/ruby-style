@@ -4,6 +4,14 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+## 1.4.0 (2023-02-11)
+
+### Changed
+
+* Update rubocop to `1.45.1`. ([@r.dubrovsky][])
+* Update rubocop-rails to `2.17.4`. ([@r.dubrovsky][])
+* Update rubocop-rspec to `2.18.1`. ([@r.dubrovsky][])
+
 ## 1.3.0 (2022-12-02)
 
 ### Added
