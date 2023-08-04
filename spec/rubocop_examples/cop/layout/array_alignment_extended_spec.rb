@@ -2,7 +2,7 @@
 
 module RubocopExamples
   module Cop
-    module Lauout
+    module Layout
       class ArrayAlignmentExtended
         attr_reader :a, :b, :c
 

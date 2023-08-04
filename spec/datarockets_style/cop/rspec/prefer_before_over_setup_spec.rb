@@ -15,7 +15,7 @@ RSpec.describe DatarocketsStyle::Cop::RSpec::PreferBeforeOverSetup do
     it "registers an offence on setup call" do
       expect_offense <<~RUBY
         setup do
-        ^^^^^^^^ Use `before` instead of `setup`.
+        ^^^^^^^^ RSpec/PreferBeforeOverSetup: Use `before` instead of `setup`.
           allow(post).to receive(:publish!)
         end
       RUBY
@@ -34,7 +34,7 @@ RSpec.describe DatarocketsStyle::Cop::RSpec::PreferBeforeOverSetup do
     it "registers an offence on setup call" do
       expect_offense <<~RUBY
         setup {
-        ^^^^^^^ Use `before` instead of `setup`.
+        ^^^^^^^ RSpec/PreferBeforeOverSetup: Use `before` instead of `setup`.
           allow(post).to receive(:publish!)
         }
       RUBY

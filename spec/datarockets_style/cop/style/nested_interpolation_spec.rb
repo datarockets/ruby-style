@@ -18,35 +18,35 @@ RSpec.describe DatarocketsStyle::Cop::Style::NestedInterpolation do
   it "registers interpolation into business block" do
     expect_offense(<<~'RUBY')
       "#{assignment.join("\n#{indentation(node)}")}"
-                            ^^^^^^^^^^^^^^^^^^^^ Redundant nested interpolation.
+                            ^^^^^^^^^^^^^^^^^^^^ Style/NestedInterpolation: Redundant nested interpolation.
     RUBY
   end
 
   it 'registers an offense for "Hello, #{user.blank? ? guest : "dear #{user.name}"}"' do
     expect_offense(<<~'RUBY')
       "Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}"
-                                              ^^^^^^^^^^^^ Redundant nested interpolation.
+                                              ^^^^^^^^^^^^ Style/NestedInterpolation: Redundant nested interpolation.
     RUBY
   end
 
   it 'registers an offense for %|Hello, #{user.blank? ? guest : "dear #{user.name}"|' do
     expect_offense(<<~'RUBY')
       %|Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}|
-                                               ^^^^^^^^^^^^ Redundant nested interpolation.
+                                               ^^^^^^^^^^^^ Style/NestedInterpolation: Redundant nested interpolation.
     RUBY
   end
 
   it 'registers an offense for %Q(Hello, #{user.blank? ? guest : "dear #{user.name}")' do
     expect_offense(<<~'RUBY')
       %Q(Hello, #{user.blank? ? 'guest' : "dear #{user.name}"})
-                                                ^^^^^^^^^^^^ Redundant nested interpolation.
+                                                ^^^^^^^^^^^^ Style/NestedInterpolation: Redundant nested interpolation.
     RUBY
   end
 
   it 'registers an offense for ["Hello, #{user.blank? ? guest : "dear #{user.name}"}"]' do
     expect_offense(<<~'RUBY')
       ["Hello, #{user.blank? ? 'guest' : "dear #{user.name}"}", 'foo']
-                                               ^^^^^^^^^^^^ Redundant nested interpolation.
+                                               ^^^^^^^^^^^^ Style/NestedInterpolation: Redundant nested interpolation.
     RUBY
   end
 end
