@@ -6,6 +6,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## 1.5.0
 
+### Added
+
+* Added GraphQL cops. ([@Anastastasia-B][])
+
+### Changed
+
 * **(Breaking)** Support Ruby >= 2.7.0
 
 * Update rubocop to `1.55.1`. ([@Set27])
@@ -280,3 +286,4 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 [@a.branzeanu]: https://github.com/texpert
 [@nikitasakov]: https://github.com/nikitasakov
 [@paydaylight]: https://github.com/paydaylight
+[@Anastastasia-B]: https://github.com/Anastastasia-B

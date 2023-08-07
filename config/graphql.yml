@@ -1,0 +1,10 @@
+require: rubocop-graphql
+
+GraphQL/ExtractInputType:
+  Enabled: false
+
+GraphQL/ExtractType:
+  Enabled: false
+
+GraphQL/ResolverMethodLength:
+  Max: 10
