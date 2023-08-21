@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "pathname"
-require_relative "./todo_list_formatter/report_summary"
+require_relative "todo_list_formatter/report_summary"
 
 # This formatter works like default formattter (display dots for files with no offenses and
 # letters for files with problems in the them).

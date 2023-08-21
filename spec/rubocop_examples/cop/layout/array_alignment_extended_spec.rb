@@ -2,7 +2,7 @@
 
 module RubocopExamples
   module Cop
-    module Lauout
+    module Layout
       class ArrayAlignmentExtended
         attr_reader :a, :b, :c
 
@@ -20,10 +20,7 @@ module RubocopExamples
 
         def test3
           it "returns himself and his investor" do
-            is_expected.to match_array([
-              unaffiliated_investor,
-              broker_investor,
-            ])
+            is_expected.to contain_exactly(unaffiliated_investor, broker_investor)
           end
         end
       end
