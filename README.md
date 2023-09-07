@@ -60,6 +60,16 @@ inherit_gem:
     - config/rails-locales.yml
 ```
 
+### GraphQL config
+
+To include specific rules for GraphQL, you can add the following config
+
+```yaml
+inherit_gem:
+  datarockets-style:
+    - config/graphql.yml
+```
+
 ### Rspec config
 
 For Rspec tests, you can add a special rubocop config
