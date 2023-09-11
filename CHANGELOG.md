@@ -14,9 +14,9 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 * **(Breaking)** Support Ruby >= 2.7.0
 
-* Update rubocop to `1.55.1`. ([@Set27])
-* Update rubocop-rails to `2.20.2`. ([@Set27])
-* Update rubocop-spec to `2.23.0`. ([@Set27])
+* Update rubocop to `1.56.3`. ([@Set27])
+* Update rubocop-rails to `2.21.0`. ([@Set27])
+* Update rubocop-spec to `2.24.0`. ([@Set27])
 
 ## 1.4.0 (2023-02-11)
 

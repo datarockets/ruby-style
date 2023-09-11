@@ -32,10 +32,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.55.1"
-  spec.add_dependency "rubocop-graphql", "~> 1.1.1"
-  spec.add_dependency "rubocop-rails", "~> 2.20.2"
-  spec.add_dependency "rubocop-rspec", "~> 2.23.0"
+  spec.add_dependency "rubocop", "~> 1.56.3"
+  spec.add_dependency "rubocop-graphql", "~> 1.4"
+  spec.add_dependency "rubocop-rails", "~> 2.21"
+  spec.add_dependency "rubocop-rspec", "~> 2.24"
 
   spec.metadata["rubygems_mfa_required"] = "true"
 end
