@@ -12,7 +12,7 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ### Changed
 
-* **(Breaking)** Support Ruby >= 2.7.0
+* **(Breaking)** Support Ruby >= 3.0.0
 
 * Update rubocop to `1.56.3`. ([@Set27])
 * Update rubocop-rails to `2.21.0`. ([@Set27])
