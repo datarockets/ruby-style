@@ -4,6 +4,12 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
+## 1.6.0 (2024-08-26)
+
+### Changed
+
+* **(Breaking)** Support Ruby >= 3.0.0
+
 ## 1.5.0 (2023-09-11)
 
 ### Added
