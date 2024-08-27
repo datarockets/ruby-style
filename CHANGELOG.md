@@ -4,11 +4,16 @@ The format is described in [Contributing notes](CONTRIBUTING.md#changelog-entry-
 
 ## master
 
-## 1.6.0 (2024-08-26)
+## 1.6.0 (2024-08-27)
 
 ### Changed
 
 * **(Breaking)** Support Ruby >= 3.0.0
+
+* Update rubocop to `1.65.1`. ([@Set27])
+* Update rubocop-graphql to `1.5.4`. ([@Set27])
+* Update rubocop-rails to `2.26`. ([@Set27])
+* Update rubocop-spec to `3.0.4`. ([@Set27])
 
 ## 1.5.0 (2023-09-11)
 
