@@ -33,8 +33,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop", "~> 1.65.1"
-  spec.add_dependency "rubocop-graphql", "~> 1.4"
-  spec.add_dependency "rubocop-rails", "~> 2.21"
+  spec.add_dependency "rubocop-graphql", "~> 1.5.4"
+  spec.add_dependency "rubocop-rails", "~> 2.26"
   spec.add_dependency "rubocop-rspec", "~> 3.0.4"
 
   spec.metadata["rubygems_mfa_required"] = "true"
