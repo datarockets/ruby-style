@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: rubocop-rspec
+    versions:
+    - 2.2.0
